@@ -4,34 +4,40 @@ theme: /OrderStatus
         a: Введите номер вашего заказа (например, 100001):
         
     state: ProcessOrder
-        q: * $Number *
+        q: * @duckling.number *
         script:
-            var orderNum = $parseTree._Number;
+            var orderNum = $parseTree.value;
             
-            # Валидация формата
             if (!orderNum || orderNum.toString().length < 4) {
-                $reactions.answer("Номер заказа должен содержать минимум 4 цифры. Попробуйте ещё раз:");
+                $reactions.answer("Номер заказа должен содержать минимум 4 цифры.");
                 return;
             }
             
             $session.orderNumber = orderNum.toString();
+            $reactions.answer("Ищу заказ № " + $session.orderNumber);
             
-            # Запрос к API
             try {
-                var orderUrl = $global.API_BASE_URL + "/orders/" + $session.orderNumber;
-                var orderResp = $http.get(orderUrl, {
+                var orderUrl = $global.API_BASE_URL + "/api/v1/orders/" + $session.orderNumber;
+                
+                var orderResp = $http.query(orderUrl, {
+                    method: "GET",
                     headers: {
                         "X-API-Key": $global.API_KEY
                     },
-                    timeout: 3000
+                    timeout: 5000,
+                    dataType: "text"
                 });
                 
                 if (orderResp && orderResp.status == 200) {
-                    var order = orderResp.body;
+                    // Парсим JSON вручную
+                    var order = JSON.parse(orderResp.data);
                     
                     var msg = "📦 Заказ #" + order.order_number + "\n";
                     msg += "Статус: " + order.status_label + "\n";
-                    msg += "Дата создания: " + order.created_at.substring(0,10) + "\n";
+                    
+                    if (order.created_at) {
+                        msg += "Дата создания: " + order.created_at.substring(0, 10) + "\n";
+                    }
                     
                     if (order.estimated_delivery) {
                         msg += "Ожидаемая доставка: " + order.estimated_delivery + "\n";
@@ -53,12 +59,13 @@ theme: /OrderStatus
                     $session.failCount = 0;
                     
                 } else if (orderResp && orderResp.status == 404) {
-                    go!: /OrderStatus/NotFound
+                    $reactions.transition("/OrderStatus/NotFound");
                 }
                 
             } catch(e) {
+                $reactions.answer("Ошибка: " + e.message);
                 log("Orders API error: " + e.message);
-                go!: /OrderStatus/APIError
+                $reactions.transition("/OrderStatus/APIError");
             }
     
     state: NotFound

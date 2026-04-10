@@ -31,3 +31,33 @@ Thumbs.db
 .ipynb_checkpoints/
 
 .zip
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- IDE ---
+.vscode/
+.idea/
+
+# --- Env / secrets ---
+.env
+*.env
+
+# --- ML models / caches ---
+ml/
+app/ml/
+*.pt
+*.bin
+*.safetensors
+
+# HuggingFace cache (если случайно подтянется в проект)
+.cache/
+**/.cache/
+huggingface/
+hf_cache/
+
+# Logs / artifacts
+*.log

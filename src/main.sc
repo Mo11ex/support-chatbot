@@ -11,8 +11,9 @@ require: states/escalation.sc
 
 init:
     # URL твоего FastAPI (замени на реальный при деплое)
-    $global.API_BASE_URL = "http://localhost:8000/api/v1";
-    $global.API_KEY = "your-secret-key-here";  # Добавь в .env потом
+    $global.API_BASE_URL = "https://74c8018b-d87c-4adc-ac88-071708caed89.tunnel4.com";
+    $global.API_KEY = "your-secret-key-here";  
+    # Добавь в .env потом
     
     # Пороги
     $global.CLASSIFIER_THRESHOLD_HIGH = 0.65;
@@ -28,21 +29,18 @@ theme: /
     state: Start
         q!: $regex</start>
         script:
-            # Инициализация сессии
+            // Инициализация сессии
             $session.failCount = 0;
             $session.category = null;
             $session.confidence = 0;
             $session.orderNumber = null;
             $session.dialogHistory = [];
         a: Переходим к приветствию
-        go!: /Greeting
+        go!: /Greeting/Welcome
 
     state: CatchAll
         event!: noMatch
         a: Перехватываем все необработанные сообщения
-        go!: /ClassifierRouter
-
-    state: NoMatch
-        event!: noMatch
-        a: Что-то пошло не так
-        go!: /Fallback
+        script:
+            $reactions.answer("DEBUG CatchAll: " + $request.query);
+        go!: /ClassifierRouter/Route

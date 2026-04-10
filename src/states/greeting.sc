@@ -15,13 +15,32 @@ theme: /Greeting
     state: Help
         q!: * (помощь|что ты умеешь|меню|menu|help) *
         a: Я могу помочь с:
-        a: • Отслеживанием заказов
-        a: • Ответами на частые вопросы
-        a: • Поиском информации в базе знаний
-        a: • Связью с оператором
-        a: 
-        a: Просто напишите ваш вопрос или выберите тему:
+         • Отслеживанием заказов
+         • Ответами на частые вопросы
+         • Поиском информации в базе знаний
+         • Связью с оператором
+         
+         Просто напишите ваш вопрос или выберите тему:
         buttons:
-            "📦 Статус заказа"
-            "❓ Частые вопросы"
-            "💬 Оператор"
+            "📦 Статус заказа" -> /OrderStatus/AskOrderNumber
+            "❓ Частые вопросы" -> /FAQHandler/ShowMenu
+            "💬 Связаться с оператором" -> /Escalation/RequestOperator
+
+    state: TestAPI
+        q: тест апи
+        script:
+            try {
+                var url = $global.API_BASE_URL + "/orders/100001";
+                $reactions.answer("URL: " + url);
+                
+                var resp = $http.get(url, {
+                    headers: {"X-API-Key": $global.API_KEY},
+                    timeout: 5000
+                });
+                
+                $reactions.answer("Status: " + resp.status);
+                $reactions.answer("Response: " + JSON.stringify(resp).substring(0, 1000));
+                
+            } catch(e) {
+                $reactions.answer("Error: " + e.message);
+            }

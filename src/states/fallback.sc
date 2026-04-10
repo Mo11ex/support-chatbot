@@ -7,7 +7,7 @@ theme: /Fallback
             log("Fallback triggered. Fail count: " + $session.failCount);
             
             if ($session.failCount >= $global.MAX_FAIL_COUNT) {
-                go!: /Fallback/AutoEscalate
+                $reactions.transition("/Fallback/AutoEscalate");
             }
         
         a: Извините, я не совсем понял ваш вопрос 🤔

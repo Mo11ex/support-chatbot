@@ -1,77 +1,59 @@
+import os
 from fastapi import APIRouter, Depends
+from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import text
-from pydantic import BaseModel
+
 from app.db.database import get_db
 
 router = APIRouter()
 
+FAQ_THRESHOLD = float(os.getenv("FAQ_SIMILARITY_THRESHOLD", "0.80"))
 
-class FAQRequest(BaseModel):
+class FaqMatchRequest(BaseModel):
     text: str
-    session_id: str = "default"
+    session_id: str | None = None
 
-
-class FAQResponse(BaseModel):
+class FaqMatchResponse(BaseModel):
     matched: bool
-    faq_id: int | None
-    answer: str | None
-    category: str | None
-    similarity: float
+    faq_id: int | None = None
+    answer: str | None = None
+    category: str | None = None
+    similarity: float = 0.0
 
+FAQ_SQL = text("""
+SELECT
+  f.id AS faq_id,
+  f.answer_text AS answer,
+  c.code AS category,
+  similarity(lower(:q), lower(tp.phrase)) AS sim
+FROM faq_entries f
+CROSS JOIN LATERAL jsonb_array_elements_text(f.trigger_phrases) AS tp(phrase)
+LEFT JOIN categories c ON c.id = f.category_id
+WHERE f.is_active = TRUE
+ORDER BY sim DESC, f.priority DESC
+LIMIT 1;
+""")
 
-@router.post("/faq/match", response_model=FAQResponse)
-async def match_faq(request: FAQRequest, db: AsyncSession = Depends(get_db)):
-    user_text = request.text.lower().strip()
+@router.post("/faq/match", response_model=FaqMatchResponse)
+async def faq_match(payload: FaqMatchRequest, db: AsyncSession = Depends(get_db)):
+    q = payload.text.strip()
+    if not q:
+        return FaqMatchResponse(matched=False, similarity=0.0)
 
-    query = text("""
-        SELECT f.id, f.answer_text, c.code AS category, f.trigger_phrases
-        FROM faq_entries f
-        JOIN categories c ON c.id = f.category_id
-        WHERE f.is_active = TRUE
-        ORDER BY f.priority DESC
-    """)
+    result = await db.execute(FAQ_SQL, {"q": q})
+    row = result.mappings().first()
+    if not row:
+        return FaqMatchResponse(matched=False, similarity=0.0)
 
-    result = await db.execute(query)
-    rows = result.fetchall()
+    sim = float(row["sim"] or 0.0)
+    if sim < FAQ_THRESHOLD:
+        return FaqMatchResponse(matched=False, similarity=sim)
 
-    best_match = None
-    best_similarity = 0.0
-
-    for row in rows:
-        faq_id, answer, category, triggers_jsonb = row
-        triggers = triggers_jsonb if isinstance(triggers_jsonb, list) else []
-
-        for trigger in triggers:
-            trigger_lower = str(trigger).lower()
-
-            if trigger_lower in user_text or user_text in trigger_lower:
-                similarity = 1.0
-            else:
-                user_words = set(user_text.split())
-                trigger_words = set(trigger_lower.split())
-                if not trigger_words:
-                    continue
-                common = user_words & trigger_words
-                similarity = len(common) / max(len(trigger_words), len(user_words))
-
-            if similarity > best_similarity:
-                best_similarity = similarity
-                best_match = {"faq_id": faq_id, "answer": answer, "category": category}
-
-    if best_match and best_similarity >= 0.6:
-        await db.execute(
-            text("UPDATE faq_entries SET hit_count = hit_count + 1 WHERE id = :id"),
-            {"id": best_match["faq_id"]},
-        )
-        await db.commit()
-
-        return FAQResponse(
-            matched=True,
-            faq_id=best_match["faq_id"],
-            answer=best_match["answer"],
-            category=best_match["category"],
-            similarity=round(best_similarity, 3),
-        )
-
-    return FAQResponse(matched=False, faq_id=None, answer=None, category=None, similarity=round(best_similarity, 3))
+    return FaqMatchResponse(
+        matched=True,
+        faq_id=int(row["faq_id"]),
+        answer=row["answer"],
+        category=row["category"],
+        similarity=sim
+    )
