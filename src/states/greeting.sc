@@ -1,6 +1,7 @@
 theme: /Greeting
 
     state: Welcome
+        #TODO: intent:
         q!: * (привет|здравствуй|добрый день|hi|hello) *
         q!: $regex</start>
         script:
@@ -13,6 +14,7 @@ theme: /Greeting
             "💬 Связаться с оператором" -> /Escalation/RequestOperator
 
     state: Help
+        #TODO: intent:
         q!: * (помощь|что ты умеешь|меню|menu|help) *
         a: Я могу помочь с:
          • Отслеживанием заказов
@@ -25,22 +27,5 @@ theme: /Greeting
             "📦 Статус заказа" -> /OrderStatus/AskOrderNumber
             "❓ Частые вопросы" -> /FAQHandler/ShowMenu
             "💬 Связаться с оператором" -> /Escalation/RequestOperator
-
-    state: TestAPI
-        q: тест апи
-        script:
-            try {
-                var url = $global.API_BASE_URL + "/orders/100001";
-                $reactions.answer("URL: " + url);
-                
-                var resp = $http.get(url, {
-                    headers: {"X-API-Key": $global.API_KEY},
-                    timeout: 5000
-                });
-                
-                $reactions.answer("Status: " + resp.status);
-                $reactions.answer("Response: " + JSON.stringify(resp).substring(0, 1000));
-                
-            } catch(e) {
-                $reactions.answer("Error: " + e.message);
-            }
+            
+    #TODO: intent: Благодарность

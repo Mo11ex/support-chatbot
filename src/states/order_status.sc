@@ -1,6 +1,7 @@
 theme: /OrderStatus
 
     state: AskOrderNumber
+        #TODO: intent: и сущность
         a: Введите номер вашего заказа (например, 100001):
         
     state: ProcessOrder

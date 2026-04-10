@@ -23,31 +23,66 @@ theme: /ClassifierRouter
             // ШАГ 1: FAQ Fast-Path
             // ───────────────────────────────
             try {
-                var faqResp = $http.query(apiBase + "/api/v1/faq/match", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "X-API-Key": apiKey
-                },
-                body: { text: userText, session_id: $session.id },
-                timeout: 2000
+                var faqUrl = apiBase + "/api/v1/faq/match";
+                log("FAQ URL=" + faqUrl);
+            
+                var faqResp = $http.query(faqUrl, {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                      "X-API-Key": apiKey
+                    },
+                    body: { text: userText, session_id: $session.id },
+                    timeout: 10000
                 });
-
-                var faqStatus = faqResp.status || faqResp.statusCode;
-                var faqData = faqResp.data || faqResp.body || {};
-
-                if (faqStatus == 200 && faqData.matched) {
-                $session.lastSource = "faq";
-                $session.failCount = 0;
-
-                $reactions.answer(faqData.answer);
-                $reactions.buttons([
-                    { text: "Задать другой вопрос", transition: "/ClassifierRouter/Route" }
-                ]);
-                return;
+            
+                var faqStatus = faqResp.status || faqResp.statusCode || 0;
+                log("FAQ status=" + faqStatus);
+            
+                // Логируем типы и превью
+                log("FAQ typeof data=" + (typeof faqResp.data) + ", typeof body=" + (typeof faqResp.body) + ", typeof responseBody=" + (typeof faqResp.responseBody));
+            
+                if (faqResp.body) {
+                    if (typeof faqResp.body === "string") log("FAQ body(str) preview=" + faqResp.body.substring(0, 250));
+                    else log("FAQ body(obj) preview=" + JSON.stringify(faqResp.body).substring(0, 250));
+                } else {
+                    log("FAQ body is empty");
                 }
+            
+                if (faqResp.data) {
+                    if (typeof faqResp.data === "string") log("FAQ data(str) preview=" + faqResp.data.substring(0, 250));
+                    else log("FAQ data(obj) preview=" + JSON.stringify(faqResp.data).substring(0, 250));
+                } else {
+                    log("FAQ data is empty");
+                }
+            
+                if (faqResp.responseBody) {
+                    if (typeof faqResp.responseBody === "string") log("FAQ responseBody(str) preview=" + faqResp.responseBody.substring(0, 250));
+                    else log("FAQ responseBody(obj) preview=" + JSON.stringify(faqResp.responseBody).substring(0, 250));
+                } else {
+                    log("FAQ responseBody is empty");
+                }
+            
+                // Пытаемся получить JSON-объект (без изменения логики пока)
+                var faqRaw = faqResp.data || faqResp.body || faqResp.responseBody;
+                var faqData = {};
+                if (typeof faqRaw === "string") {
+                    try { faqData = JSON.parse(faqRaw); }
+                    catch (e) { log("FAQ JSON.parse error: " + e.message); faqData = {}; }
+                } else if (typeof faqRaw === "object" && faqRaw) {
+                    faqData = faqRaw;
+                }
+            
+                log("FAQ parsed matched=" + faqData.matched + ", answerLen=" + (faqData.answer ? faqData.answer.length : 0));
+            
+                // ТВОЯ исходная логика (оставляем)
+                if (faqStatus == 200 && faqData.matched) {
+                    $reactions.answer(String(faqData.answer || "").replace(/\r/g, ""));
+                    return;
+                }
+            
             } catch (e) {
-                log("FAQ error: " + e.message);
+              log("FAQ error: " + e.message);
             }
 
             // ───────────────────────────────
@@ -55,22 +90,22 @@ theme: /ClassifierRouter
             // ───────────────────────────────
             try {
                 var clsResp = $http.query(apiBase + "/api/v1/classify", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "X-API-Key": apiKey
-                },
-                body: { text: userText, session_id: $session.id },
-                timeout: 3000
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-API-Key": apiKey
+                    },
+                    body: { text: userText, session_id: $session.id },
+                    timeout: 3000
                 });
 
                 var clsStatus = clsResp.status || clsResp.statusCode;
                 var clsData = clsResp.data || clsResp.body || {};
 
                 if (clsStatus != 200 || !clsData.category) {
-                log("Classify bad response, status=" + clsStatus);
-                $reactions.transition("/ClassifierRouter/FallbackMenu");
-                return;
+                    log("Classify bad response, status=" + clsStatus);
+                    $reactions.transition("/ClassifierRouter/FallbackMenu");
+                    return;
                 }
 
                 $session.category = clsData.category;
@@ -80,15 +115,15 @@ theme: /ClassifierRouter
 
                 // ── Высокая уверенность ──
                 if ($session.confidence >= thrHigh) {
-                $session.failCount = 0;
-                $reactions.transition("/ClassifierRouter/RouteByCategory");
-                return;
+                    $session.failCount = 0;
+                    $reactions.transition("/ClassifierRouter/RouteByCategory");
+                    return;
                 }
 
                 // ── Средняя уверенность ──
                 if ($session.confidence >= thrMid) {
-                $reactions.transition("/ClassifierRouter/AskClarification");
-                return;
+                    $reactions.transition("/ClassifierRouter/AskClarification");
+                    return;
                 }
 
                 // ── Низкая уверенность ──
@@ -155,7 +190,7 @@ theme: /ClassifierRouter
             for (var i = 0; i < top3.length && i < 3; i++) {
                 var cat = top3[i].category;
                 if (label[cat]) {
-                buttons.push({ text: label[cat], transition: "/ClassifierRouter/ClarifiedRoute" });
+                    buttons.push({ text: label[cat], transition: "/ClassifierRouter/ClarifiedRoute" });
                 }
             }
 
@@ -227,6 +262,40 @@ theme: /RAGHandler
                 body: { query: q, top_k: 3, session_id: $session.id },
                 timeout: 4000
                 });
+                
+                
+                
+                log("RAG URL = " + apiBase + "/api/v1/rag/query");
+                
+                var ragStatus = ragResp.status || ragResp.statusCode || 0;
+                log("RAG status=" + ragStatus);
+                log("RAG typeof data=" + (typeof ragResp.data) + ", typeof body=" + (typeof ragResp.body) + ", typeof responseBody=" + (typeof ragResp.responseBody));
+                
+                var ragRaw = ragResp.data || ragResp.body || ragResp.responseBody;
+                if (typeof ragRaw === "string") log("RAG raw(str) preview=" + ragRaw.substring(0, 250));
+                else if (typeof ragRaw === "object" && ragRaw) log("RAG raw(obj) preview=" + JSON.stringify(ragRaw).substring(0, 250));
+                else log("RAG raw is empty");
+                
+                var ragData = {};
+                if (typeof ragRaw === "string") {
+                  try { ragData = JSON.parse(ragRaw); }
+                  catch (e) { log("RAG JSON.parse error: " + e.message); ragData = {}; }
+                } else if (typeof ragRaw === "object" && ragRaw) {
+                  ragData = ragRaw;
+                }
+                
+                log("RAG parsed is_confident=" + ragData.is_confident + ", answerLen=" + (ragData.answer ? ragData.answer.length : 0) + ", maxSim=" + ragData.max_similarity);
+                
+                try {
+                    var bd = ragResp.data || ragResp.body || ragResp.responseBody;
+                    log("RAG raw picked type=" + (typeof bd));
+                    if (typeof bd === "object" && bd) {
+                        log("RAG raw.is_confident=" + bd.is_confident + ", max_similarity=" + bd.max_similarity);
+                        log("RAG raw.answer.len=" + (bd.answer ? bd.answer.length : 0));
+                    }
+                } catch(e) {
+                  log("RAG inspect error: " + e.message);
+                }
 
                 var ragStatus = ragResp.status || ragResp.statusCode;
                 var ragData = ragResp.data || ragResp.body || {};

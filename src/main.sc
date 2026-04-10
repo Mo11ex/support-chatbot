@@ -41,6 +41,4 @@ theme: /
     state: CatchAll
         event!: noMatch
         a: Перехватываем все необработанные сообщения
-        script:
-            $reactions.answer("DEBUG CatchAll: " + $request.query);
         go!: /ClassifierRouter/Route
