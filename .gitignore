@@ -61,3 +61,11 @@ hf_cache/
 
 # Logs / artifacts
 *.log
+
+# MLflow
+mlruns/
+ml/mlruns/
+
+# Build
+build/
+dist/
