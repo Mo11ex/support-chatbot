@@ -29,6 +29,75 @@ class RagQueryResponse(BaseModel):
     is_confident: bool
     processing_time_ms: int
 
+import re
+
+_WORD_RE = re.compile(r"[a-zа-яё0-9]+")
+
+def _norm(s: str) -> str:
+    return re.sub(r"\s+", " ", s.lower().replace("ё", "е")).strip()
+
+def _clean_markdown(text: str) -> str:
+    lines = []
+    for ln in text.splitlines():
+        if ln.lstrip().startswith("#"):
+            continue
+        lines.append(ln)
+    text = "\n".join(lines)
+    text = re.sub(r"\n{3,}", "\n\n", text).strip()
+    return text
+
+def _truncate_to_boundary(text: str, max_len: int = 500) -> str:
+    text = text.strip()
+    if len(text) <= max_len:
+        return text
+    cut = text[:max_len]
+    p = max(cut.rfind("\n"), cut.rfind("."), cut.rfind("!"), cut.rfind("?"), cut.rfind("…"))
+    if p < int(max_len * 0.6):
+        return cut.rstrip() + "..."
+    return cut[:p+1].rstrip()
+
+def _score_paragraph(p: str, query: str) -> int:
+    q = _norm(query)
+    pn = _norm(p)
+    score = 0
+
+    # Базовые ключевые слова (очень лёгкая “морфология” через подстроки)
+    if "срок" in q:
+        # в тексте часто "в течение" / "дней", а не слово "срок"
+        if "в течение" in pn or "дн" in pn:
+            score += 5
+
+    if "электрон" in q:
+        if "электрон" in pn:
+            score += 4
+
+    # возврат/вернуть
+    if "возврат" in q or "вернут" in q or "вернуть" in q:
+        if "возврат" in pn or "вернут" in pn:
+            score += 2
+
+    # Доп. плюс за пересечение токенов длиной >=4
+    qt = {t for t in _WORD_RE.findall(q) if len(t) >= 4}
+    pt = set(_WORD_RE.findall(pn))
+    score += sum(1 for t in qt if t in pt)
+
+    return score
+
+def _best_snippet(text: str, query: str, max_len: int = 500) -> str:
+    text = _clean_markdown(text)
+    parts = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
+    if not parts:
+        return _truncate_to_boundary(text, max_len)
+
+    parts_sorted = sorted(parts, key=lambda p: _score_paragraph(p, query), reverse=True)
+
+    snippet = parts_sorted[0]
+    # если место позволяет, добавим второй абзац (часто полезно)
+    if len(parts_sorted) > 1 and len(snippet) < max_len * 0.6:
+        snippet = snippet + "\n\n" + parts_sorted[1]
+
+    return _truncate_to_boundary(snippet, max_len)
+
 def vec_to_pgvector_literal(vec: list[float]) -> str:
     # pgvector принимает строку формата: [0.1,0.2,...]
     return "[" + ",".join(f"{x:.6f}" for x in vec) + "]"
@@ -68,11 +137,13 @@ async def rag_query(payload: RagQueryRequest, request: Request, db: AsyncSession
     for r in rows:
         sim = float(r["similarity"] or 0.0)
         max_sim = max(max_sim, sim)
+        raw_txt = (r["text"] or "")
+        snippet = _truncate_to_boundary(_clean_markdown(raw_txt), 900)
         sources.append(RagSource(
             chunk_id=int(r["chunk_id"]),
             document=r["document"],
             similarity=sim,
-            text=(r["text"] or "")[:900],
+            text=snippet,
         ))
 
     is_confident = (len(sources) > 0) and (max_sim >= RAG_THRESHOLD)
@@ -82,8 +153,8 @@ async def rag_query(payload: RagQueryRequest, request: Request, db: AsyncSession
         sources_out = []
     else:
         # Template-MVP: отдаём top-1 chunk как "grounded answer"
-        answer = sources[0].text.strip()
-        answer = answer[:500]  # NFR UX лимит
+        best_raw_text = rows[0]["text"] or ""
+        answer = _best_snippet(best_raw_text, q, max_len=500)
         sources_out = sources[:2]  # можно 1-2 источника для демонстрации
 
     ms = int((time.perf_counter() - t0) * 1000)

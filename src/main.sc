@@ -40,5 +40,5 @@ theme: /
 
     state: CatchAll
         event!: noMatch
-        a: Перехватываем все необработанные сообщения
+        #a: Перехватываем все необработанные сообщения
         go!: /ClassifierRouter/Route
