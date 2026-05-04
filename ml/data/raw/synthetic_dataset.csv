@@ -1,0 +1,136 @@
+text,category
+Промокод СКИДКА10 не активируется,promo_loyalty
+Есть ли этот товар в другом цвете?,product_info
+Сайт не работает,technical_issue
+Статус доставки заказа 296884,order_status
+Можно обменять на другой размер?,return_exchange
+Когда появится товар в наличии?,product_info
+Отследить заказ 296884,order_status
+Баг при оформлении заказа,technical_issue
+Хочу пожаловаться на обслуживание,other
+Непонятно что делать,other
+Условия возврата товара,return_exchange
+Хочу вернуть товар,return_exchange
+Заказ 511865 уже отправили?,order_status
+Промокод ВЕСНА не активируется,promo_loyalty
+Email поддержки,general_info
+Ошибка при оплате картой,payment_refund
+Есть ли в наличии наушники Sony?,product_info
+Где мой заказ 941391?,order_status
+Как сменить пароль?,account
+Доставка в выходные работает?,delivery
+Хочу изменить email,account
+Заказ 926891 уже отправили?,order_status
+Отследить заказ 941391,order_status
+Когда приедет посылка?,order_status
+Когда доставят заказ?,order_status
+"Корзина пустая, хотя я добавлял товары",technical_issue
+Какие сроки возврата?,return_exchange
+Что с моим заказом?,order_status
+Политика конфиденциальности,general_info
+Можно ли доставить сегодня?,delivery
+Почему промокод не применился?,promo_loyalty
+Забыл пароль,account
+Как оплатить заказ?,payment_refund
+Где мой заказ 296884?,order_status
+Сколько стоит доставка?,delivery
+Из чего сделан этот товар?,product_info
+Сколько ждать заказ?,order_status
+Не работает фильтр на сайте,technical_issue
+Где находится ваш офис?,general_info
+Какие размеры есть?,product_info
+Отследить заказ 144451,order_status
+"Спасибо, всё отлично!",other
+Пришлите чек об оплате,payment_refund
+Статус доставки заказа 144451,order_status
+Какой состав ткани?,product_info
+Какие способы доставки?,delivery
+Как ввести промокод?,promo_loyalty
+Как вернуть некачественный товар?,return_exchange
+Не проходит оплата,payment_refund
+Хочу изменить адрес доставки,delivery
+Подойдёт ли мне размер M?,product_info
+Какой статус заказа 941391?,order_status
+Хочу вернуть деньги за заказ,payment_refund
+Посоветуйте что-нибудь,other
+Заказ 296884 уже отправили?,order_status
+Какие сейчас акции?,promo_loyalty
+Заказ 144451 уже отправили?,order_status
+Сколько стоит футболку?,product_info
+Чем отличается модель A от B?,product_info
+Как применить скидочный купон?,promo_loyalty
+Есть ли в наличии футболку?,product_info
+Какой статус заказа 296884?,order_status
+Хочу поменять номер телефона,account
+Доставляете ли в Самару?,delivery
+Где ближайший пункт выдачи?,delivery
+Товар повреждён при доставке,return_exchange
+Статус возврата денег,payment_refund
+"Деньги списали, а заказ не создался",payment_refund
+Работаете ли в выходные?,general_info
+Какой статус заказа 511865?,order_status
+Пришёл бракованный товар,return_exchange
+Доставляете ли в Новосибирск?,delivery
+Бесплатная доставка от какой суммы?,delivery
+Страница не загружается,technical_issue
+Ваш телефон?,general_info
+Какой статус заказа 144451?,order_status
+Отследить заказ 926891,order_status
+Есть ли скидки?,promo_loyalty
+Где мой заказ 144451?,order_status
+Мой заказ ещё не пришёл,order_status
+Возврат средств на карту,payment_refund
+Доставляете ли в Екатеринбург?,delivery
+Хочу оставить отзыв,other
+Какой статус заказа 926891?,order_status
+Промокод НОВЫЙ не активируется,promo_loyalty
+Режим работы магазина,general_info
+Не могу добавить товар в корзину,technical_issue
+Есть ли в наличии чехол для iPhone?,product_info
+Есть ли в наличии кроссовки Nike?,product_info
+Сколько у меня бонусных баллов?,promo_loyalty
+"Товар не подошёл, хочу вернуть",return_exchange
+Ужасный сервис,other
+Сколько стоит чехол для iPhone?,product_info
+Вы лучший магазин!,other
+Срок доставки в Москву,delivery
+Фото товара не отображается,technical_issue
+Заблокировали мой аккаунт,account
+Как оформить возврат?,return_exchange
+Сколько стоит наушники Sony?,product_info
+Не могу создать аккаунт,account
+Обмен товара на аналогичный,return_exchange
+Как зарегистрироваться?,account
+Мне нужна помощь,other
+Сколько стоит кроссовки Nike?,product_info
+Есть ли самовывоз?,delivery
+Когда вернут деньги?,payment_refund
+У меня сложный вопрос,other
+Сколько стоит рюкзак?,product_info
+Характеристики товара,product_info
+Ошибка при регистрации,technical_issue
+Какие способы оплаты?,payment_refund
+Заказ 941391 уже отправили?,order_status
+Приложение вылетает,technical_issue
+Где посмотреть оферту?,general_info
+Где мой заказ 926891?,order_status
+Есть ли в наличии рюкзак?,product_info
+Статус доставки заказа 511865,order_status
+Где мой заказ 511865?,order_status
+Статус доставки заказа 941391,order_status
+Как копить бонусные баллы?,promo_loyalty
+Промокод SALE2026 не активируется,promo_loyalty
+Как связаться с вами?,general_info
+Не приходит код подтверждения,account
+Кто вы такие?,general_info
+Доставляете ли в Краснодар?,delivery
+Как удалить аккаунт?,account
+Не могу войти в аккаунт,account
+Юридический адрес компании,general_info
+Куда писать жалобу?,other
+Статус доставки заказа 926891,order_status
+Доставляете ли в Казань?,delivery
+Ошибка 500 на странице,technical_issue
+Отследить заказ 511865,order_status
+Промокод не работает,promo_loyalty
+Где найти промокоды?,promo_loyalty
