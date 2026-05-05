@@ -1,0 +1,28 @@
+experiment_name: "stage3-strong-classifier"
+run_name: "rubert-base-cased"
+
+model_name: "DeepPavlov/rubert-base-cased"
+text_column: "text_original"
+label_column: "label"
+
+paths:
+  train: "ml/data/splits/stage1/train_augmented.csv"
+  val: "ml/data/splits/stage1/val.csv"
+  test: "ml/data/splits/stage1/test.csv"
+  heldout: "ml/data/heldout/heldout_200_stage2.csv"
+
+  model_output_dir: "ml/models/classifier/stage3-rubert-base-cased"
+  report_dir: "ml/logs/reports/stage3_rubert_base_classifier"
+
+training:
+  seed: 42
+  learning_rate: 2.0e-5
+  batch_size: 16
+  eval_batch_size: 32
+  gradient_accumulation_steps: 1
+  num_train_epochs: 6
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  max_length: 128
+  early_stopping_patience: 2
+  logging_steps: 50
