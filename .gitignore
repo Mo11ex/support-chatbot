@@ -53,3 +53,8 @@ ml/logs/mlflow.db
 ml/logs/mlruns/
 mlruns/
 mlflow.db
+
+# Generated trained classifier artifacts
+ml/models/classifier/stage2-*/
+ml/models/classifier/stage3-*/
+ml/models/classifier/**/trainer_output/

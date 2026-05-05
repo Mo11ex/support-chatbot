@@ -327,7 +327,21 @@ def main():
 
         val_metrics = trainer.evaluate(eval_dataset=val_ds)
         log_metrics({k: float(v) for k, v in val_metrics.items() if isinstance(v, (int, float))})
-
+        
+        val_outputs = predict_split(
+            trainer=trainer,
+            df=val_df,
+            tokenizer=tokenizer,
+            text_column=text_column,
+            label_column=label_column,
+            label_list=label_list,
+            max_length=max_length,
+            out_dir=report_dir,
+            split_name="val",
+        )
+        
+        log_metrics(val_outputs["metrics"])
+        
         test_outputs = predict_split(
             trainer=trainer,
             df=test_df,
@@ -357,7 +371,8 @@ def main():
         save_json(
             {
                 "train_metrics": train_result.metrics,
-                "val_metrics": val_metrics,
+                "val_eval_metrics": val_metrics,
+                "val_split_metrics": val_outputs["metrics"],
                 "test_split_metrics": test_outputs["metrics"],
                 "heldout_metrics": heldout_outputs["metrics"],
                 "best_model_checkpoint": trainer.state.best_model_checkpoint,
@@ -369,12 +384,20 @@ def main():
         for path in [
             label_mapping_path,
             report_dir / "run_summary.json",
+
+            val_outputs["pred_csv_path"],
             test_outputs["pred_csv_path"],
             heldout_outputs["pred_csv_path"],
+
+            val_outputs["report_path"],
             test_outputs["report_path"],
             heldout_outputs["report_path"],
+
+            val_outputs["cm_csv_path"],
             test_outputs["cm_csv_path"],
             heldout_outputs["cm_csv_path"],
+
+            val_outputs["cm_png_path"],
             test_outputs["cm_png_path"],
             heldout_outputs["cm_png_path"],
         ]:
