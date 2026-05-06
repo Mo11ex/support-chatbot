@@ -1,15 +1,30 @@
+import torch
 from sentence_transformers import SentenceTransformer
+from app.config import settings
+
 
 class EmbedderService:
-    def __init__(self, model_name: str = "intfloat/multilingual-e5-small"):
-        self.model = SentenceTransformer("app/ml/rag/e5-small")
+    def __init__(self):
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        model_name = settings.embedder_model_name
 
-    def embed_query(self, text: str) -> list[float]:
-        # Важно для E5: префикс query:
-        vec = self.model.encode([f"query: {text}"], normalize_embeddings=True)[0]
-        return vec.tolist()
+        print(f"[EmbedderService] Loading model: {model_name}")
+        print(f"[EmbedderService] Device: {self.device}")
 
-    def embed_passage(self, text: str) -> list[float]:
-        # Важно для E5: префикс passage:
-        vec = self.model.encode([f"passage: {text}"], normalize_embeddings=True)[0]
-        return vec.tolist()
+        self.model = SentenceTransformer(model_name, device=self.device)
+
+    def embed_query(self, text: str):
+        emb = self.model.encode(
+            [f"query: {text}"],
+            normalize_embeddings=True,
+            convert_to_numpy=True,
+        )
+        return emb[0]
+
+    def embed_passage(self, text: str):
+        emb = self.model.encode(
+            [f"passage: {text}"],
+            normalize_embeddings=True,
+            convert_to_numpy=True,
+        )
+        return emb[0]
