@@ -1,0 +1,16 @@
+corpus_path: "ml/data/processed/faq_corpus.csv"
+
+output_dir: "ml/models/retriever/stage4_hybrid_index"
+
+dense:
+  model_name: "intfloat/multilingual-e5-base"
+  batch_size: 32
+  passage_prefix: "passage:"
+  normalize_embeddings: true
+
+bm25:
+  lowercase: true
+  use_regex_tokenizer: true
+
+faiss:
+  index_type: "IndexFlatIP"

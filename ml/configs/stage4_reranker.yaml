@@ -1,0 +1,20 @@
+eval_path: "ml/data/processed/faq_eval.csv"
+index_dir: "ml/models/retriever/stage4_hybrid_index"
+
+dense:
+  model_name: "intfloat/multilingual-e5-base"
+  query_prefix: "query:"
+  batch_size: 32
+
+retrieval:
+  top_n_chunks_dense: 30
+  top_n_docs_rerank: 10
+  top_k_final: 5
+
+reranker:
+  model_name: "BAAI/bge-reranker-v2-m3"
+  batch_size: 8
+  max_length: 256
+
+output:
+  report_dir: "ml/logs/reports/stage4_reranked_retrieval"

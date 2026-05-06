@@ -58,3 +58,7 @@ mlflow.db
 ml/models/classifier/stage2-*/
 ml/models/classifier/stage3-*/
 ml/models/classifier/**/trainer_output/
+
+# Stage 4 retriever artifacts
+ml/models/retriever/stage4*/
+ml/models/retriever/stage4_*/
