@@ -1,0 +1,15 @@
+chunks_path: "ml/data/kb_stage5/chunks/stage5_rag_chunks_v2.csv"
+output_dir: "ml/models/retriever/stage5_rag_index"
+
+dense:
+  model_name: "intfloat/multilingual-e5-base"
+  batch_size: 16
+  passage_prefix: "passage:"
+  normalize_embeddings: true
+
+bm25:
+  lowercase: true
+  use_regex_tokenizer: true
+
+faiss:
+  index_type: "IndexFlatIP"

@@ -1,0 +1,25 @@
+rag_enabled_classifier_labels:
+  - order_status
+  - account
+  - payment_refund
+  - delivery
+  - technical_issue
+  - product_info
+
+faq_enabled_classifier_labels:
+  - promo_loyalty
+  - payment_refund
+  - return_exchange
+  - delivery
+
+fallback_or_operator_classifier_labels:
+  - general_info
+  - other
+
+classifier_to_rag_category:
+  order_status: "order_support"
+  account: "account"
+  payment_refund: "payment"
+  delivery: "delivery"
+  technical_issue: "technical_support"
+  product_info: "catalog_product"

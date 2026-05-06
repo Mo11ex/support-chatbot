@@ -1,0 +1,64 @@
+tokenizer_model_name: "intfloat/multilingual-e5-base"
+
+chunking:
+  target_min_tokens: 200
+  target_max_tokens: 400
+  overlap_tokens: 50
+  allow_short_faq_chunks: true
+
+output:
+  chunks_csv: "ml/data/kb_stage5/chunks/stage5_rag_chunks.csv"
+  summary_json: "ml/logs/reports/stage5_chunking/stage5_chunking_summary.json"
+
+sources:
+  - path: "backend/data/knowledge_base/delivery_policy.md"
+    category: "delivery"
+    source_group: "faq"
+
+  - path: "backend/data/knowledge_base/payment_methods.md"
+    category: "payment"
+    source_group: "faq"
+
+  - path: "backend/data/knowledge_base/promo_codes.md"
+    category: "promo_loyalty"
+    source_group: "faq"
+
+  - path: "backend/data/knowledge_base/return_policy.md"
+    category: "returns_refunds"
+    source_group: "faq"
+
+  - path: "backend/data/knowledge_base/warranty.md"
+    category: "returns_refunds"
+    source_group: "faq"
+
+  - path: "ml/data/kb_stage5/raw/order_status_support.md"
+    category: "order_support"
+    source_group: "rag_raw"
+
+  - path: "ml/data/kb_stage5/raw/account_login.md"
+    category: "account"
+    source_group: "rag_raw"
+
+  - path: "ml/data/kb_stage5/raw/payment_failures.md"
+    category: "payment"
+    source_group: "rag_raw"
+
+  - path: "ml/data/kb_stage5/raw/delivery_tracking.md"
+    category: "delivery"
+    source_group: "rag_raw"
+
+  - path: "ml/data/kb_stage5/raw/site_issues.md"
+    category: "technical_support"
+    source_group: "rag_raw"
+
+  - path: "ml/data/kb_stage5/raw/account_security.md"
+    category: "account"
+    source_group: "rag_raw"
+
+  - path: "ml/data/kb_stage5/raw/order_changes_and_cancellation.md"
+    category: "order_support"
+    source_group: "rag_raw"
+
+  - path: "ml/data/kb_stage5/raw/product_availability.md"
+    category: "catalog_product"
+    source_group: "rag_raw"

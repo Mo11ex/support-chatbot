@@ -1,0 +1,76 @@
+categories:
+  delivery:
+    status: partial
+    existing_docs:
+      - backend/data/knowledge_base/delivery_policy.md
+    new_docs:
+      - ml/data/kb_stage5/raw/delivery_tracking.md
+      - ml/data/kb_stage5/raw/delivery_problems.md
+    priority: high
+
+  payment:
+    status: partial
+    existing_docs:
+      - backend/data/knowledge_base/payment_methods.md
+    new_docs:
+      - ml/data/kb_stage5/raw/payment_failures.md
+      - ml/data/kb_stage5/raw/payment_documents.md
+    priority: high
+
+  returns_refunds:
+    status: partial
+    existing_docs:
+      - backend/data/knowledge_base/return_policy.md
+      - backend/data/knowledge_base/warranty.md
+    new_docs:
+      - ml/data/kb_stage5/raw/refund_timing.md
+      - ml/data/kb_stage5/raw/exchange_process.md
+    priority: high
+
+  account:
+    status: missing
+    existing_docs: []
+    new_docs:
+      - ml/data/kb_stage5/raw/account_login.md
+      - ml/data/kb_stage5/raw/account_security.md
+    priority: high
+
+  promo_loyalty:
+    status: partial
+    existing_docs:
+      - backend/data/knowledge_base/promo_codes.md
+    new_docs:
+      - ml/data/kb_stage5/raw/loyalty_program.md
+    priority: medium
+
+  company_general:
+    status: missing
+    existing_docs: []
+    new_docs:
+      - ml/data/kb_stage5/raw/company_info.md
+      - ml/data/kb_stage5/raw/contacts_and_hours.md
+    priority: medium
+
+  catalog_product:
+    status: missing
+    existing_docs: []
+    new_docs:
+      - ml/data/kb_stage5/raw/product_availability.md
+      - ml/data/kb_stage5/raw/product_specs_and_variants.md
+    priority: high
+
+  order_support:
+    status: missing
+    existing_docs: []
+    new_docs:
+      - ml/data/kb_stage5/raw/order_status_support.md
+      - ml/data/kb_stage5/raw/order_changes_and_cancellation.md
+    priority: high
+
+  technical_support:
+    status: missing
+    existing_docs: []
+    new_docs:
+      - ml/data/kb_stage5/raw/site_issues.md
+      - ml/data/kb_stage5/raw/checkout_issues.md
+    priority: high

@@ -1,0 +1,27 @@
+{
+  "chunks_path": "ml\\data\\kb_stage5\\chunks\\stage5_rag_chunks_v2.csv",
+  "output_dir": "ml\\models\\retriever\\stage5_rag_index",
+  "dense_model_name": "intfloat/multilingual-e5-base",
+  "device": "cuda",
+  "batch_size": 16,
+  "passage_prefix": "passage:",
+  "normalize_embeddings": true,
+  "num_chunks": 82,
+  "num_categories": 6,
+  "categories": {
+    "account": 20,
+    "catalog_product": 10,
+    "delivery": 11,
+    "order_support": 20,
+    "payment": 11,
+    "technical_support": 10
+  },
+  "embedding_dim": 768,
+  "faiss_index_type": "IndexFlatIP",
+  "files": {
+    "faiss_index": "ml\\models\\retriever\\stage5_rag_index\\faiss.index",
+    "metadata": "ml\\models\\retriever\\stage5_rag_index\\metadata.csv",
+    "bm25": "ml\\models\\retriever\\stage5_rag_index\\bm25.pkl",
+    "bm25_tokens": "ml\\models\\retriever\\stage5_rag_index\\bm25_tokens.json"
+  }
+}

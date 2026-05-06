@@ -1,0 +1,36 @@
+query,classifier_label,expected_category,relevant_source_file,notes
+где посмотреть статус заказа?,order_status,order_support,order_status_support.md,order_status_basic
+что значит статус в сборке?,order_status,order_support,order_status_support.md,order_status_status_meaning
+когда появляется трек-номер?,order_status,order_support,order_status_support.md,order_status_tracking
+что делать если заказ завис?,order_status,order_support,order_status_support.md,order_status_stuck
+можно ли ускорить обработку заказа?,order_status,order_support,order_status_support.md,order_status_speedup
+
+не могу войти в аккаунт,account,account,account_login.md,account_login_basic
+забыл пароль от аккаунта,account,account,account_login.md,account_password_reset
+не приходит код подтверждения,account,account,account_login.md,account_code_issue
+как поменять email в аккаунте?,account,account,account_login.md,account_change_email
+как изменить номер телефона в профиле?,account,account,account_login.md,account_change_phone
+
+оплата не проходит,payment_refund,payment,payment_failures.md,payment_fail
+деньги списались но заказ не создался,payment_refund,payment,payment_failures.md,payment_money_taken_no_order
+ошибка банка при оплате,payment_refund,payment,payment_failures.md,payment_bank_error
+когда вернут деньги за неудачную оплату?,payment_refund,payment,payment_failures.md,payment_refund_timing
+двойное списание по заказу,payment_refund,payment,payment_failures.md,payment_double_charge
+
+как отследить посылку?,delivery,delivery,delivery_tracking.md,delivery_tracking_basic
+где найти трек-номер?,delivery,delivery,delivery_tracking.md,delivery_tracking_number
+посылка не движется,delivery,delivery,delivery_tracking.md,delivery_stuck
+можно ли изменить адрес доставки?,delivery,delivery,delivery_tracking.md,delivery_change_address
+курьер не приехал,delivery,delivery,delivery_tracking.md,delivery_courier_problem
+
+сайт не открывается,technical_issue,technical_support,site_issues.md,site_down
+приложение вылетает,technical_issue,technical_support,site_issues.md,app_crash
+не работает корзина,technical_issue,technical_support,site_issues.md,cart_issue
+не работает оформление заказа,technical_issue,technical_support,site_issues.md,checkout_issue
+ошибка 502 на сайте,technical_issue,technical_support,site_issues.md,http_502
+
+есть ли товар в наличии?,product_info,catalog_product,product_availability.md,product_availability_basic
+какие размеры доступны?,product_info,catalog_product,product_availability.md,product_sizes
+какие цвета есть у товара?,product_info,catalog_product,product_availability.md,product_colors
+где посмотреть характеристики товара?,product_info,catalog_product,product_availability.md,product_specs
+можно ли оформить предзаказ?,product_info,catalog_product,product_availability.md,product_preorder
