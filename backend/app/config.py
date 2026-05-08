@@ -34,6 +34,9 @@ class Settings(BaseSettings):
 
     # Logging
     request_log_path: str = str(PROJECT_ROOT / "ml/logs/request_log.jsonl")
+    
+    # LLM
+    llm_model_path: str = str(PROJECT_ROOT / "ml/models/llm/qwen2.5-3b-instruct-q4_k_m.gguf")
 
     # Routing
     classifier_to_rag_category: dict = {

@@ -1,6 +1,7 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from app.api.v1 import classify, health, orders, faq, feedback, rag, answer
+from app.services.llm_service import LlmService
 
 
 @asynccontextmanager
@@ -26,6 +27,9 @@ async def lifespan(app: FastAPI):
 
     print("[Startup] Loading Request Logger...")
     app.state.logger = RequestLogger()
+    
+    print("[Startup] Loading LLM service...")
+    app.state.llm = LlmService()
 
     print("[Startup] Building Router...")
     app.state.router = RouterService(
@@ -33,6 +37,7 @@ async def lifespan(app: FastAPI):
         faq_service=app.state.faq,
         rag_service=app.state.rag,
         logger=app.state.logger,
+        llm_service=app.state.llm,
     )
 
     print("[Startup] All services loaded.")

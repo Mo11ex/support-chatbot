@@ -60,11 +60,12 @@ def is_order_tracking_query(text: str) -> bool:
 
 
 class RouterService:
-    def __init__(self, classifier, faq_service, rag_service, logger):
+    def __init__(self, classifier, faq_service, rag_service, logger, llm_service):
         self.classifier = classifier
         self.faq = faq_service
         self.rag = rag_service
         self.logger = logger
+        self.llm = llm_service
 
         self.faq_upper = settings.faq_upper_threshold
         self.faq_lower = settings.faq_lower_threshold
@@ -77,6 +78,27 @@ class RouterService:
         self.faq_primary = set(settings.faq_primary_intents)
         self.rag_primary = set(settings.rag_primary_intents)
         self.fallback_intents = set(settings.fallback_intents)
+        
+    def _render_faq_answer(self, query: str, faq_result: dict) -> str:
+        """
+        Для FAQ НЕ используем LLM.
+        FAQ already curated and should stay fast.
+        """
+        return faq_result.get("top1_text") or ""
+
+    def _render_rag_answer(self, query: str, rag_result: dict) -> str:
+        """
+        Генерация ответа по RAG-контексту. Склеиваем top-3 чанка.
+        """
+        if "results" in rag_result and rag_result["results"]:
+            chunks = [res.get("text", "") for res in rag_result["results"][:3] if res.get("text")]
+            context = "\n---\n".join(chunks)
+        else:
+            context = rag_result.get("top1_text") or ""
+
+        if self.llm:
+            return self.llm.generate_answer(query, context)
+        return context
 
     async def handle(self, text: str, order_id: str | None = None) -> dict:
         t0 = time.perf_counter()
@@ -191,7 +213,7 @@ class RouterService:
                 rag_score = rag_result["top1_score"]
 
                 if rag_score >= self.rag_upper:
-                    answer = rag_result["top1_text"]
+                    answer = self._render_rag_answer(norm_text, rag_result)
                     branch = "rag_with_filter"
                     source_type = "rag"
                     source_id = rag_result["top1_source_file"]
@@ -259,7 +281,7 @@ class RouterService:
 
         # FAQ primary intents always may use FAQ
         if intent in self.faq_primary and faq_score >= self.faq_upper:
-            answer = faq_result["top1_text"]
+            answer = self._render_faq_answer(norm_text, faq_result)
             branch = "faq_direct"
             source_type = "faq"
             source_id = faq_result["top1_doc_id"]
@@ -291,7 +313,7 @@ class RouterService:
 
         # Если classifier не слишком уверен, но FAQ очень уверен — доверяем FAQ
         if intent_confidence < self.conf_high and faq_score >= self.faq_upper:
-            answer = faq_result["top1_text"]
+            answer = self._render_faq_answer(norm_text, faq_result)
             branch = "faq_direct"
             source_type = "faq"
             source_id = faq_result["top1_doc_id"]
@@ -328,7 +350,7 @@ class RouterService:
             rag_score = rag_result["top1_score"]
 
             if rag_score >= self.rag_upper:
-                answer = rag_result["top1_text"]
+                answer = self._render_rag_answer(norm_text, rag_result)
                 branch = "rag_with_filter"
                 source_type = "rag"
                 source_id = rag_result["top1_source_file"]
@@ -364,7 +386,7 @@ class RouterService:
             rag_score = rag_result_nf["top1_score"]
 
             if rag_score >= self.rag_upper:
-                answer = rag_result_nf["top1_text"]
+                answer = self._render_rag_answer(norm_text, rag_result_nf)
                 branch = "rag_no_filter"
                 source_type = "rag"
                 source_id = rag_result_nf["top1_source_file"]
