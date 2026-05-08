@@ -1,0 +1,47 @@
+categories:
+  delivery:
+    description: "Доставка, сроки, стоимость, самовывоз, география, отслеживание"
+    linked_classifier_labels:
+      - delivery
+      - order_status
+
+  payment:
+    description: "Способы оплаты, онлайн-оплата, оплата при получении, возврат денег"
+    linked_classifier_labels:
+      - payment_refund
+
+  returns_refunds:
+    description: "Возврат товара, обмен, сроки возврата, возврат денег, брак"
+    linked_classifier_labels:
+      - return_exchange
+      - payment_refund
+
+  account:
+    description: "Регистрация, вход, пароль, личный кабинет, данные аккаунта"
+    linked_classifier_labels:
+      - account
+
+  promo_loyalty:
+    description: "Промокоды, акции, бонусы, программа лояльности, реферальная программа"
+    linked_classifier_labels:
+      - promo_loyalty
+
+  company_general:
+    description: "Контакты, адрес, график работы, общая информация о компании"
+    linked_classifier_labels:
+      - general_info
+
+  catalog_product:
+    description: "Информация о товаре, характеристики, размеры, наличие, цвета"
+    linked_classifier_labels:
+      - product_info
+
+  order_support:
+    description: "Статус заказа, изменение заказа, подтверждение, отслеживание заказов"
+    linked_classifier_labels:
+      - order_status
+
+  technical_support:
+    description: "Ошибки сайта, проблемы оплаты, проблемы входа, технические сбои"
+    linked_classifier_labels:
+      - technical_issue

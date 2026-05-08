@@ -1,0 +1,84 @@
+text_original,text_normalized,label,source,is_synthetic,is_augmented,is_hard_negative,hard_negative_pair,notes
+скидка на этот товар есть?,скидка на этот товар есть?,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+акция на эту модель сейчас действует?,акция на эту модель сейчас действует?,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+на этот товар есть промокод?,на этот товар есть промокод?,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+есть скидка на первый заказ товара?,есть скидка на первый заказ товара?,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+можно купить этот товар по акции?,можно купить этот товар по акции?,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+есть бонусы на эту покупку?,есть бонусы на эту покупку?,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+промокод на этот заказ сработает?,промокод на этот заказ сработает?,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+какая скидка на этот товар?,какая скидка на этот товар?,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+по акции можно взять этот товар?,по акции можно взять этот товар?,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+этот товар участвует в акции?,этот товар участвует в акции?,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+этот товар есть в наличии со скидкой?,этот товар есть в наличии со скидкой?,product_info,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+какие цвета есть у товара по акции?,какие цвета есть у товара по акции?,product_info,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+есть ли этот товар в другом размере со скидкой?,есть ли этот товар в другом размере со скидкой?,product_info,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+товар по акции в наличии?,товар по акции в наличии?,product_info,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+характеристики товара со скидкой,характеристики товара со скидкой,product_info,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+какой размер у товара по акции?,какой размер у товара по акции?,product_info,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+есть этот товар в наличии по акции?,есть этот товар в наличии по акции?,product_info,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+что за товар со скидкой?,что за товар со скидкой?,product_info,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+этот акционный товар в каком цвете?,этот акционный товар в каком цвете?,product_info,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+есть описание товара по акции?,есть описание товара по акции?,product_info,stage3_hardneg_manual,False,False,True,promo_loyalty__product_info,boundary
+
+скидка не применилась при оплате,скидка не применилась при оплате,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+почему не работает промокод при оплате?,почему не работает промокод при оплате?,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+акция не сработала в корзине,акция не сработала в корзине,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+бонусы не списались при заказе,бонусы не списались при заказе,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+промик не применился к оплате,промик не применился к оплате,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+скидка не проходит,скидка не проходит,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+почему купон не активируется?,почему купон не активируется?,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+промокод не дает скидку,промокод не дает скидку,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+скидка не применилась к заказу,скидка не применилась к заказу,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+акционная цена не отображается,акционная цена не отображается,promo_loyalty,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+когда вернут деньги за заказ?,когда вернут деньги за заказ?,payment_refund,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+возврат денег на карту где?,возврат денег на карту где?,payment_refund,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+оплата прошла без скидки и деньги списались,оплата прошла без скидки и деньги списались,payment_refund,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+как вернуть деньги за заказ со скидкой?,как вернуть деньги за заказ со скидкой?,payment_refund,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+деньги списались неправильно,деньги списались неправильно,payment_refund,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+почему оплата прошла без скидки?,почему оплата прошла без скидки?,payment_refund,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+сколько ждать возврат денег?,сколько ждать возврат денег?,payment_refund,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+как вернуть средства за заказ?,как вернуть средства за заказ?,payment_refund,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+деньги за заказ не вернулись,деньги за заказ не вернулись,payment_refund,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+вернут ли деньги если скидка не сработала?,вернут ли деньги если скидка не сработала?,payment_refund,stage3_hardneg_manual,False,False,True,promo_loyalty__payment_refund,boundary
+
+не могу войти в аккаунт,не могу войти в аккаунт,account,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+сбросить пароль,сбросить пароль,account,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+не приходит код входа,не приходит код входа,account,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+ошибка при входе в аккаунт,ошибка при входе в аккаунт,account,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+личный кабинет не пускает,личный кабинет не пускает,account,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+не могу сменить пароль,не могу сменить пароль,account,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+код подтверждения не пришел,код подтверждения не пришел,account,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+как войти в личный кабинет?,как войти в личный кабинет?,account,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+профиль не открывается после входа,профиль не открывается после входа,account,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+не помню пароль от аккаунта,не помню пароль от аккаунта,account,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+сайт не открывается при входе,сайт не открывается при входе,technical_issue,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+приложение зависает на авторизации,приложение зависает на авторизации,technical_issue,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+страница логина не грузится,страница логина не грузится,technical_issue,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+ошибка сайта при входе,ошибка сайта при входе,technical_issue,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+глючит форма входа,глючит форма входа,technical_issue,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+страница входа зависла,страница входа зависла,technical_issue,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+авторизация не работает,авторизация не работает,technical_issue,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+не грузится экран входа,не грузится экран входа,technical_issue,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+ошибка сервера при логине,ошибка сервера при логине,technical_issue,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+сайт падает при входе,сайт падает при входе,technical_issue,stage3_hardneg_manual,False,False,True,technical_issue__account,boundary
+
+когда вернут деньги?,когда вернут деньги?,payment_refund,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+возврат денег на карту,возврат денег на карту,payment_refund,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+как получить возврат средств?,как получить возврат средств?,payment_refund,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+сколько ждать возврат денег?,сколько ждать возврат денег?,payment_refund,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+вернут ли деньги за заказ?,вернут ли деньги за заказ?,payment_refund,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+когда будет возврат средств?,когда будет возврат средств?,payment_refund,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+деньги за возврат где?,деньги за возврат где?,payment_refund,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+возврат средств оформлен?,возврат средств оформлен?,payment_refund,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+сколько идет возврат денег?,сколько идет возврат денег?,payment_refund,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+деньги вернут на карту?,деньги вернут на карту?,payment_refund,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+как вернуть товар?,как вернуть товар?,return_exchange,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+обменять товар можно?,обменять товар можно?,return_exchange,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+куда отправить возврат товара?,куда отправить возврат товара?,return_exchange,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+не подошел товар,не подошел товар,return_exchange,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+брак как вернуть,брак как вернуть,return_exchange,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+как оформить возврат товара?,как оформить возврат товара?,return_exchange,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+можно сдать товар обратно?,можно сдать товар обратно?,return_exchange,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+обмен товара где оформить?,обмен товара где оформить?,return_exchange,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+как сделать обмен?,как сделать обмен?,return_exchange,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary
+возврат товара куда?,возврат товара куда?,return_exchange,stage3_hardneg_manual,False,False,True,return_exchange__payment_refund,boundary

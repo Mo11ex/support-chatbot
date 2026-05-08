@@ -1,0 +1,108 @@
+text_original,text_normalized,label,source,is_synthetic,is_augmented,is_hard_negative,notes
+скидка есть?,скидка есть?,promo_loyalty,stage3_short_manual,False,False,False,short
+акции?,акции?,promo_loyalty,stage3_short_manual,False,False,False,short
+промик?,промик?,promo_loyalty,stage3_short_manual,False,False,False,short
+бонусы?,бонусы?,promo_loyalty,stage3_short_manual,False,False,False,short
+промокод?,промокод?,promo_loyalty,stage3_short_manual,False,False,False,short
+скидка,скидка,promo_loyalty,stage3_short_manual,False,False,False,one_word
+акции щас?,акции щас?,promo_loyalty,stage3_short_manual,False,False,False,short_slang
+есть акции?,есть акции?,promo_loyalty,stage3_short_manual,False,False,False,short
+промик дайте,промик дайте,promo_loyalty,stage3_short_manual,False,False,False,short_slang
+промокод где?,промокод где?,promo_loyalty,stage3_short_manual,False,False,False,short
+Дай скидку?,дай скидку?,promo_loyalty,stage3_short_manual,False,False,False,short
+Хочу узнать об акциях?,хочу узнать об акциях?,promo_loyalty,stage3_short_manual,False,False,False,short
+Хочу узнать о скидках?,хочу узнать о скидках?,promo_loyalty,stage3_short_manual,False,False,False,short
+Какие промокоды действуют?,какие промокоды действуют?,promo_loyalty,stage3_short_manual,False,False,False,short
+Как получиить скидку,как получиить скидку,promo_loyalty,stage3_short_manual,False,False,False,short
+сайт глючит,сайт глючит,technical_issue,stage3_short_manual,False,False,False,short
+не грузит,не грузит,technical_issue,stage3_short_manual,False,False,False,short
+ошибка сайта,ошибка сайта,technical_issue,stage3_short_manual,False,False,False,short
+оплата висит,оплата висит,technical_issue,stage3_short_manual,False,False,False,short
+ничего не грузится,ничего не грузится,technical_issue,stage3_short_manual,False,False,False,short
+глючит,глючит,technical_issue,stage3_short_manual,False,False,False,one_word
+зависло,зависло,technical_issue,stage3_short_manual,False,False,False,one_word
+баг,баг,technical_issue,stage3_short_manual,False,False,False,one_word
+ошибка,ошибка,technical_issue,stage3_short_manual,False,False,False,one_word
+не работает,не работает,technical_issue,stage3_short_manual,False,False,False,short
+сайт сломался,сайт сломался,technical_issue,stage3_short_manual,False,False,False,short
+ошибка на сайте,ошибка на сайте,technical_issue,stage3_short_manual,False,False,False,short
+не могу зайти на сайт,не могу зайти на сайт,technical_issue,stage3_short_manual,False,False,False,short
+502 ошибка,502 ошибка,technical_issue,stage3_short_manual,False,False,False,short
+пустой сайт,пустой сайт,technical_issue,stage3_short_manual,False,False,False,short
+адрес?,адрес?,general_info,stage3_short_manual,False,False,False,one_word
+телефон?,телефон?,general_info,stage3_short_manual,False,False,False,one_word
+контакты?,контакты?,general_info,stage3_short_manual,False,False,False,one_word
+график?,график?,general_info,stage3_short_manual,False,False,False,one_word
+магазин где?,магазин где?,general_info,stage3_short_manual,False,False,False,short
+как связаться?,как связаться?,general_info,stage3_short_manual,False,False,False,short
+офис?,офис?,general_info,stage3_short_manual,False,False,False,one_word
+связь?,связь?,general_info,stage3_short_manual,False,False,False,one_word
+ваш адрес,ваш адрес,general_info,stage3_short_manual,False,False,False,short
+номер телефона,номер телефона,general_info,stage3_short_manual,False,False,False,short
+Где находитесь?,где находитесь?,general_info,stage3_short_manual,False,False,False,short
+Как дойти?,как дойти?,general_info,stage3_short_manual,False,False,False,short
+Маршрут до вас,маршрут до вас,general_info,stage3_short_manual,False,False,False,short
+дай адрес,дай адрес,general_info,stage3_short_manual,False,False,False,short
+оператор,оператор,other,stage3_short_manual,False,False,False,one_word
+человек,человек,other,stage3_short_manual,False,False,False,one_word
+жалоба,жалоба,other,stage3_short_manual,False,False,False,one_word
+отзыв,отзыв,other,stage3_short_manual,False,False,False,one_word
+претензия,претензия,other,stage3_short_manual,False,False,False,one_word
+нужен оператор,нужен оператор,other,stage3_short_manual,False,False,False,short
+живой человек,живой человек,other,stage3_short_manual,False,False,False,short
+как пожаловаться?,как пожаловаться?,other,stage3_short_manual,False,False,False,short
+куда отзыв?,куда отзыв?,other,stage3_short_manual,False,False,False,short
+связь с оператором,связь с оператором,other,stage3_short_manual,False,False,False,short
+хочу пожаловаться,хочу пожаловаться,other,stage3_short_manual,False,False,False,short
+как написать жалобу?,как написать жалобу?,other,stage3_short_manual,False,False,False,short
+товар?,товар?,product_info,stage3_short_manual,False,False,False,one_word
+наличие?,наличие?,product_info,stage3_short_manual,False,False,False,one_word
+цвета?,цвета?,product_info,stage3_short_manual,False,False,False,one_word
+размеры?,размеры?,product_info,stage3_short_manual,False,False,False,one_word
+характеристики?,характеристики?,product_info,stage3_short_manual,False,False,False,one_word
+есть в наличии?,есть в наличии?,product_info,stage3_short_manual,False,False,False,short
+какой размер?,какой размер?,product_info,stage3_short_manual,False,False,False,short
+другой цвет?,другой цвет?,product_info,stage3_short_manual,False,False,False,short
+что за товар?,что за товар?,product_info,stage3_short_manual,False,False,False,short
+наличие товара,наличие товара,product_info,stage3_short_manual,False,False,False,short
+возврат?,возврат?,return_exchange,stage3_short_manual,False,False,False,one_word
+обмен?,обмен?,return_exchange,stage3_short_manual,False,False,False,one_word
+сдать?,сдать?,return_exchange,stage3_short_manual,False,False,False,one_word
+вернуть товар?,вернуть товар?,return_exchange,stage3_short_manual,False,False,False,short
+обмен товара,обмен товара,return_exchange,stage3_short_manual,False,False,False,short
+брак,брак,return_exchange,stage3_short_manual,False,False,False,one_word
+не подошло,не подошло,return_exchange,stage3_short_manual,False,False,False,short
+сдать обратно,сдать обратно,return_exchange,stage3_short_manual,False,False,False,short
+как вернуть?,как вернуть?,return_exchange,stage3_short_manual,False,False,False,short
+обратно товар,обратно товар,return_exchange,stage3_short_manual,False,False,False,short
+почему скидки нет?,почему скидки нет?,promo_loyalty,stage3_short_manual,False,False,False,short
+бонусы где?,бонусы где?,promo_loyalty,stage3_short_manual,False,False,False,short
+акция идет?,акция идет?,promo_loyalty,stage3_short_manual,False,False,False,short
+промокод не пашет,промокод не пашет,promo_loyalty,stage3_short_manual,False,False,False,short_slang
+скидка будет?,скидка будет?,promo_loyalty,stage3_short_manual,False,False,False,short
+купон есть?,купон есть?,promo_loyalty,stage3_short_manual,False,False,False,short
+почему висит сайт?,почему висит сайт?,technical_issue,stage3_short_manual,False,False,False,short
+страница пустая,страница пустая,technical_issue,stage3_short_manual,False,False,False,short
+не открывается,не открывается,technical_issue,stage3_short_manual,False,False,False,one_word
+ошибка входа,ошибка входа,technical_issue,stage3_short_manual,False,False,False,short
+приложение лагает,приложение лагает,technical_issue,stage3_short_manual,False,False,False,short_slang
+где вы?,где вы?,general_info,stage3_short_manual,False,False,False,short
+ваши контакты,ваши контакты,general_info,stage3_short_manual,False,False,False,short
+как вам позвонить?,как вам позвонить?,general_info,stage3_short_manual,False,False,False,short
+где магазин?,где магазин?,general_info,stage3_short_manual,False,False,False,short
+режим работы?,режим работы?,general_info,stage3_short_manual,False,False,False,short
+позвать оператора,позвать оператора,other,stage3_short_manual,False,False,False,short
+где оператор?,где оператор?,other,stage3_short_manual,False,False,False,short
+срочно оператор,срочно оператор,other,stage3_short_manual,False,False,False,short
+оставить претензию,оставить претензию,other,stage3_short_manual,False,False,False,short
+жалобу куда?,жалобу куда?,other,stage3_short_manual,False,False,False,short
+есть размеры?,есть размеры?,product_info,stage3_short_manual,False,False,False,short
+есть цвета?,есть цвета?,product_info,stage3_short_manual,False,False,False,short
+что в наличии?,что в наличии?,product_info,stage3_short_manual,False,False,False,short
+описание товара,описание товара,product_info,stage3_short_manual,False,False,False,short
+есть другой размер?,есть другой размер?,product_info,stage3_short_manual,False,False,False,short
+оформить возврат,оформить возврат,return_exchange,stage3_short_manual,False,False,False,short
+товар обратно,товар обратно,return_exchange,stage3_short_manual,False,False,False,short
+можно обменять?,можно обменять?,return_exchange,stage3_short_manual,False,False,False,short
+вернуть обратно?,вернуть обратно?,return_exchange,stage3_short_manual,False,False,False,short
+обменять товар?,обменять товар?,return_exchange,stage3_short_manual,False,False,False,short

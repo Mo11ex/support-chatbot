@@ -1,0 +1,26 @@
+index_dir: "ml/models/retriever/stage5_rag_index"
+
+dense:
+  model_name: "intfloat/multilingual-e5-base"
+  query_prefix: "query:"
+  batch_size: 32
+
+retrieval:
+  top_k_no_filter: 5
+  top_k_with_filter: 5
+  top_n_search: 82
+
+classifier_to_rag_category:
+  order_status: "order_support"
+  account: "account"
+  payment_refund: "payment"
+  return_exchange: "returns_refunds"
+  delivery: "delivery"
+  product_info: "catalog_product"
+  technical_issue: "technical_support"
+  promo_loyalty: "promo_loyalty"
+  general_info: "company_general"
+  other: null
+
+output:
+  report_dir: "ml/logs/reports/stage5_rag_retrieval_demo"

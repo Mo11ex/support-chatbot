@@ -1,0 +1,101 @@
+version: 1
+
+canonical_labels:
+  account:
+    id: 0
+    description: "Запросы, связанные с аккаунтом: регистрация, восстановление доступа, изменение данных"
+    route: "fallback"
+
+  delivery:
+    id: 1
+    description: "Вопросы по доставке"
+    route: "faq_handler"
+    kb_hint:
+      - "delivery_policy.md"
+
+  general_info:
+    id: 2
+    description: "Общие вопросы о магазине или сервисе"
+    route: "fallback"
+
+  order_status:
+    id: 3
+    description: "Статус заказа, история заказа, изменение или отмена заказа"
+    route: "order_status"
+
+  other:
+    id: 4
+    description: "Нераспознанные, шумовые или вне домена запросы"
+    route: "fallback"
+
+  payment_refund:
+    id: 5
+    description: "Оплата и возврат денежных средств"
+    route: "faq_handler"
+    kb_hint:
+      - "payment_methods.md"
+      - "return_policy.md"
+
+  product_info:
+    id: 6
+    description: "Информация о товаре, наличие, характеристики"
+    route: "fallback"
+
+  promo_loyalty:
+    id: 7
+    description: "Промокоды, акции, программа лояльности"
+    route: "faq_handler"
+    kb_hint:
+      - "promo_codes.md"
+
+  return_exchange:
+    id: 8
+    description: "Возврат и обмен товара"
+    route: "faq_handler"
+    kb_hint:
+      - "return_policy.md"
+
+  technical_issue:
+    id: 9
+    description: "Технические проблемы сайта или приложения"
+    route: "escalation"
+
+datasets:
+  legacy_full_dataset:
+    path: "ml/data/raw/final/full_dataset.csv"
+    text_column: "text"
+    raw_label_column: "category"
+    source_column: "source"
+    is_synthetic: false
+
+  synthetic_dataset:
+    path: "ml/data/raw/synthetic_dataset.csv"
+    text_column: "text"
+    raw_label_column: "category"
+    source: "synthetic_dataset"
+    is_synthetic: true
+
+source_mappings:
+  legacy_full_dataset:
+    account: account
+    delivery: delivery
+    general_info: general_info
+    order_status: order_status
+    other: other
+    payment_refund: payment_refund
+    product_info: product_info
+    promo_loyalty: promo_loyalty
+    return_exchange: return_exchange
+    technical_issue: technical_issue
+
+  synthetic_dataset:
+    account: account
+    delivery: delivery
+    general_info: general_info
+    order_status: order_status
+    other: other
+    payment_refund: payment_refund
+    product_info: product_info
+    promo_loyalty: promo_loyalty
+    return_exchange: return_exchange
+    technical_issue: technical_issue

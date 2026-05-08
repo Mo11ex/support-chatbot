@@ -1,0 +1,306 @@
+sample_id,text_original,text_normalized,raw_label,label,source,is_synthetic,is_augmented,is_hard_negative,other_subtype_rule
+stg1_001766,хочу отправить обзор продукта,хочу отправить обзор продукта,other,other,bitext,False,False,False,unclassified
+stg1_001767,"Я хотел бы поговорить с агентством, могу ли я получить помощь?","я хотел бы поговорить с агентством, могу ли я получить помощь?",other,other,bitext,False,False,False,operator_contact
+stg1_001768,"Я хочу предложить чертовы предложения по улучшению продукта, где я могу это сделать?","я хочу предложить чертовы предложения по улучшению продукта, где я могу это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001769,"нужно отправить предложение по улучшению продукта, как я могу это сделать","нужно отправить предложение по улучшению продукта, как я могу это сделать",other,other,bitext,False,False,False,feedback_complaint
+stg1_001770,"Я хотел бы отправить чертов комментарий о твоей компании, ох, я это сделаю","я хотел бы отправить чертов комментарий о твоей компании, ох, я это сделаю",other,other,bitext,False,False,False,unclassified
+stg1_001771,"мне нужно отправить отзыв о продукте, помогите мне","мне нужно отправить отзыв о продукте, помогите мне",other,other,bitext,False,False,False,feedback_complaint
+stg1_001772,"У меня чертов отзыв, не могли бы вы помочь мне его отправить?","у меня чертов отзыв, не могли бы вы помочь мне его отправить?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001773,"мне нужно отправить комментарии к продукту, не могли бы мне помочь","мне нужно отправить комментарии к продукту, не могли бы мне помочь",other,other,bitext,False,False,False,unclassified
+stg1_001774,"Мне нужно отправить отзыв о продукте, мне нужна помощь","мне нужно отправить отзыв о продукте, мне нужна помощь",other,other,bitext,False,False,False,feedback_complaint
+stg1_001775,"хочу отправить жалобу, мне нужна помощь","хочу отправить жалобу, мне нужна помощь",other,other,bitext,False,False,False,feedback_complaint
+stg1_001776,"Мне нужно отправить чертову жалобу на ваш бренд, где это сделать?","мне нужно отправить чертову жалобу на ваш бренд, где это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001777,"Я хотел бы оставить чертовы комментарии о продуктах, которые могут мне помочь.","я хотел бы оставить чертовы комментарии о продуктах, которые могут мне помочь.",other,other,bitext,False,False,False,unclassified
+stg1_001778,"Я вас не понимаю, мне нужна помощь, чтобы поговорить с оператором","я вас не понимаю, мне нужна помощь, чтобы поговорить с оператором",other,other,bitext,False,False,False,operator_contact
+stg1_001779,"Я хотел бы предложить чертову идею по улучшению продукта, как я могу это сделать?","я хотел бы предложить чертову идею по улучшению продукта, как я могу это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001780,"мне нужно отправить чертов отзыв о твоем бренде, где я могу это сделать","мне нужно отправить чертов отзыв о твоем бренде, где я могу это сделать",other,other,bitext,False,False,False,feedback_complaint
+stg1_001781,"Я хочу подать жалобу на продукцию, как мне это сделать?","я хочу подать жалобу на продукцию, как мне это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001782,"Мне нужно поговорить с человеком, как мне это сделать?","мне нужно поговорить с человеком, как мне это сделать?",other,other,bitext,False,False,False,operator_contact
+stg1_001783,"Мне нужна помощь, чтобы представить идею","мне нужна помощь, чтобы представить идею",other,other,bitext,False,False,False,feedback_complaint
+stg1_001784,"Мне нужно поговорить с чертовым человеком-агентом, где я могу это сделать?","мне нужно поговорить с чертовым человеком-агентом, где я могу это сделать?",other,other,bitext,False,False,False,operator_contact
+stg1_001785,"у меня чертовски жалоба на твой бренд, могу ли я ее отправить?","у меня чертовски жалоба на твой бренд, могу ли я ее отправить?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001786,Мне нужно отправить чертов комментарий о вашей компании.,мне нужно отправить чертов комментарий о вашей компании.,other,other,bitext,False,False,False,unclassified
+stg1_001787,"Я хотел бы послать чертовы идеи по улучшению продукта, могу ли я получить помощь?","я хотел бы послать чертовы идеи по улучшению продукта, могу ли я получить помощь?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001788,"Я хотел бы отправить идею продукта, вы мне поможете?","я хотел бы отправить идею продукта, вы мне поможете?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001789,"Мне нужно оставить чертов комментарий о вашей компании, как я могу это сделать?","мне нужно оставить чертов комментарий о вашей компании, как я могу это сделать?",other,other,bitext,False,False,False,unclassified
+stg1_001790,"Я хотел бы подать чертову жалобу на твой бренд, помоги мне.","я хотел бы подать чертову жалобу на твой бренд, помоги мне.",other,other,bitext,False,False,False,feedback_complaint
+stg1_001791,"Мне нужно представить идеи, вы мне поможете?","мне нужно представить идеи, вы мне поможете?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001792,"Я хотел бы подать гребаную жалобу, где я могу это сделать?","я хотел бы подать гребаную жалобу, где я могу это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001793,"Мне нужно отправить комментарий к товару, где это сделать?","мне нужно отправить комментарий к товару, где это сделать?",other,other,bitext,False,False,False,unclassified
+stg1_001794,"хочу оставить комментарии о продуктах, где это сделать","хочу оставить комментарии о продуктах, где это сделать",other,other,bitext,False,False,False,unclassified
+stg1_001795,"Я хотел бы поговорить с кем-нибудь, как мне это сделать?","я хотел бы поговорить с кем-нибудь, как мне это сделать?",other,other,bitext,False,False,False,operator_contact
+stg1_001796,"Мне нужно отправить предложения по продуктам, где я могу это сделать?","мне нужно отправить предложения по продуктам, где я могу это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001797,"Я хотел бы оставить комментарий о вашем бренде, помогите мне.","я хотел бы оставить комментарий о вашем бренде, помогите мне.",other,other,bitext,False,False,False,unclassified
+stg1_001798,"Я хотел бы оставить чертов комментарий о продукте, где я могу это сделать","я хотел бы оставить чертов комментарий о продукте, где я могу это сделать",other,other,bitext,False,False,False,unclassified
+stg1_001799,"я не понимаю, как мне поговорить с агентом-человеком","я не понимаю, как мне поговорить с агентом-человеком",other,other,bitext,False,False,False,operator_contact
+stg1_001800,"я не понимаю, мне нужно поговорить с человеком","я не понимаю, мне нужно поговорить с человеком",other,other,bitext,False,False,False,operator_contact
+stg1_001801,могу ли я предложить чертовски продукт?,могу ли я предложить чертовски продукт?,other,other,bitext,False,False,False,unclassified
+stg1_001802,"хочу отправить отзыв о вашем бренде, как я могу это сделать","хочу отправить отзыв о вашем бренде, как я могу это сделать",other,other,bitext,False,False,False,feedback_complaint
+stg1_001803,"Я тебя не понимаю, помоги мне поговорить с чертовым человеком.","я тебя не понимаю, помоги мне поговорить с чертовым человеком.",other,other,bitext,False,False,False,operator_contact
+stg1_001804,"Мне нужно поговорить с человеком, ты можешь мне помочь?","мне нужно поговорить с человеком, ты можешь мне помочь?",other,other,bitext,False,False,False,operator_contact
+stg1_001805,"Я хочу поговорить с человеком, вы мне поможете?","я хочу поговорить с человеком, вы мне поможете?",other,other,bitext,False,False,False,operator_contact
+stg1_001806,"У меня есть отзыв, вы поможете мне его отправить?","у меня есть отзыв, вы поможете мне его отправить?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001807,Не могли бы вы помочь мне отправить чертовы жалобы на продукты?,не могли бы вы помочь мне отправить чертовы жалобы на продукты?,other,other,bitext,False,False,False,feedback_complaint
+stg1_001808,"Я тебя не понимаю, можешь помочь мне поговорить с кем-то, черт возьми?","я тебя не понимаю, можешь помочь мне поговорить с кем-то, черт возьми?",other,other,bitext,False,False,False,operator_contact
+stg1_001809,"Я хотел бы поговорить с чертовым оператором, могу ли я получить помощь?","я хотел бы поговорить с чертовым оператором, могу ли я получить помощь?",other,other,bitext,False,False,False,operator_contact
+stg1_001810,как я могу оставить комментарий о товаре?,как я могу оставить комментарий о товаре?,other,other,bitext,False,False,False,unclassified
+stg1_001811,"я не понимаю, мне нужна помощь, чтобы поговорить с оператором","я не понимаю, мне нужна помощь, чтобы поговорить с оператором",other,other,bitext,False,False,False,operator_contact
+stg1_001812,"Хочу отправить идеи, куда это сделать?","хочу отправить идеи, куда это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001813,"Я хочу оставить отзыв о продукте, где я могу это сделать?","я хочу оставить отзыв о продукте, где я могу это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001814,"Я хотел бы оставить отзыв о продукте, мне нужна помощь","я хотел бы оставить отзыв о продукте, мне нужна помощь",other,other,bitext,False,False,False,feedback_complaint
+stg1_001815,"Мне нужно отправить чертов отзыв о продукте, как я мог это сделать?","мне нужно отправить чертов отзыв о продукте, как я мог это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001816,"Мне нужно отправить чертовы предложения по продукту, как я мог это сделать?","мне нужно отправить чертовы предложения по продукту, как я мог это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001817,"мне нужно отправить отзыв, чтобы сделать это","мне нужно отправить отзыв, чтобы сделать это",other,other,bitext,False,False,False,feedback_complaint
+stg1_001818,"нужно поговорить с кем-нибудь, где это сделать","нужно поговорить с кем-нибудь, где это сделать",other,other,bitext,False,False,False,operator_contact
+stg1_001819,где cvan я могу оставить отзыв,где cvan я могу оставить отзыв,other,other,bitext,False,False,False,feedback_complaint
+stg1_001820,"хочу отправить чертов отзыв, где мне это сделать?","хочу отправить чертов отзыв, где мне это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001821,"мне нужна помощь, чтобы представить чертову идею продукта","мне нужна помощь, чтобы представить чертову идею продукта",other,other,bitext,False,False,False,feedback_complaint
+stg1_001822,куда я могу подать жалобу на товар?,куда я могу подать жалобу на товар?,other,other,bitext,False,False,False,feedback_complaint
+stg1_001823,"Я хотел представить чертовы идеи, где мне это сделать?","я хотел представить чертовы идеи, где мне это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001824,мне нужна помощь в отправке отзыва о продукте,мне нужна помощь в отправке отзыва о продукте,other,other,bitext,False,False,False,feedback_complaint
+stg1_001825,"я бы хотел поговорить с кем-нибудь, где я мог бы это сделать","я бы хотел поговорить с кем-нибудь, где я мог бы это сделать",other,other,bitext,False,False,False,operator_contact
+stg1_001826,"Мне нужно поговорить с чертовым кем-нибудь, помоги мне.","мне нужно поговорить с чертовым кем-нибудь, помоги мне.",other,other,bitext,False,False,False,operator_contact
+stg1_001827,"Я хотел бы отправить идею продукта, как я могу это сделать?","я хотел бы отправить идею продукта, как я могу это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001828,"я не понимаю, ты не мог бы помочь мне поговорить с чертовым человеком","я не понимаю, ты не мог бы помочь мне поговорить с чертовым человеком",other,other,bitext,False,False,False,operator_contact
+stg1_001829,у меня жалоба на продукцию,у меня жалоба на продукцию,other,other,bitext,False,False,False,feedback_complaint
+stg1_001830,"Я бы хотел поговорить с кем-нибудь, черт возьми, мне нужна помощь","я бы хотел поговорить с кем-нибудь, черт возьми, мне нужна помощь",other,other,bitext,False,False,False,operator_contact
+stg1_001831,"Я хотел бы отправить чертов отзыв, где мне это сделать?","я хотел бы отправить чертов отзыв, где мне это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001832,"хочу подать жалобу на свой бренд, где это сделать","хочу подать жалобу на свой бренд, где это сделать",other,other,bitext,False,False,False,feedback_complaint
+stg1_001833,"у меня есть комментарий о продукте, как я могу его отправить","у меня есть комментарий о продукте, как я могу его отправить",other,other,bitext,False,False,False,unclassified
+stg1_001834,нужно поговорить с чертовым оператором,нужно поговорить с чертовым оператором,other,other,bitext,False,False,False,operator_contact
+stg1_001835,"Мне нужна помощь, чтобы отправить предложения по продуктам","мне нужна помощь, чтобы отправить предложения по продуктам",other,other,bitext,False,False,False,feedback_complaint
+stg1_001836,"я не понимаю, мне нужна помощь, чтобы поговорить с кем-то трахающимся","я не понимаю, мне нужна помощь, чтобы поговорить с кем-то трахающимся",other,other,bitext,False,False,False,operator_contact
+stg1_001837,"Я бы хотел поговорить с чертовым человеком, который мог бы мне помочь.","я бы хотел поговорить с чертовым человеком, который мог бы мне помочь.",other,other,bitext,False,False,False,operator_contact
+stg1_001838,"У меня есть чертов комментарий о вашем бренде, как я могу его отправить?","у меня есть чертов комментарий о вашем бренде, как я могу его отправить?",other,other,bitext,False,False,False,unclassified
+stg1_001839,Я бы хотел поговорить с чертовым кем-нибудь,я бы хотел поговорить с чертовым кем-нибудь,other,other,bitext,False,False,False,operator_contact
+stg1_001840,как мне подать чертову потребительскую претензию?,как мне подать чертову потребительскую претензию?,other,other,ikshana,False,False,False,legal_claim
+stg1_001841,как подать жалобу клиента,как подать жалобу клиента,other,other,ikshana,False,False,False,feedback_complaint
+stg1_001842,"Я не доволен вашей работой, как мне предъявить претензию?","я не доволен вашей работой, как мне предъявить претензию?",other,other,ikshana,False,False,False,legal_claim
+stg1_001843,подать иск потребителя против вашей компании,подать иск потребителя против вашей компании,other,other,ikshana,False,False,False,legal_claim
+stg1_001844,как я могу поговорить с агентом-человеком?,как я могу поговорить с агентом-человеком?,other,other,ikshana,False,False,False,operator_contact
+stg1_001845,"что мне нужно сделать, чтобы связаться с человеком?","что мне нужно сделать, чтобы связаться с человеком?",other,other,ikshana,False,False,False,operator_contact
+stg1_001846,"Я звоню, чтобы подать жалобу клиента на вашу организацию","я звоню, чтобы подать жалобу клиента на вашу организацию",other,other,ikshana,False,False,False,feedback_complaint
+stg1_001847,помогите поговорить с помощником,помогите поговорить с помощником,other,other,ikshana,False,False,False,operator_contact
+stg1_001848,нужна помощь в подаче потребительского иска против вашей организации,нужна помощь в подаче потребительского иска против вашей организации,other,other,ikshana,False,False,False,legal_claim
+stg1_001849,"я не знаю, что мне нужно сделать, чтобы поговорить с живым агентом","я не знаю, что мне нужно сделать, чтобы поговорить с живым агентом",other,other,ikshana,False,False,False,operator_contact
+stg1_001850,я должен подать иск против твоего бизнеса,я должен подать иск против твоего бизнеса,other,other,ikshana,False,False,False,legal_claim
+stg1_001851,"Я не знаю, что мне нужно сделать, чтобы связаться с помощником","я не знаю, что мне нужно сделать, чтобы связаться с помощником",other,other,ikshana,False,False,False,operator_contact
+stg1_001852,Мне нужно поговорить с агентом-человеком,мне нужно поговорить с агентом-человеком,other,other,ikshana,False,False,False,operator_contact
+stg1_001853,нужна помощь в подаче потребительского иска против вашего бизнеса,нужна помощь в подаче потребительского иска против вашего бизнеса,other,other,ikshana,False,False,False,legal_claim
+stg1_001854,Я хочу связаться с агентом,я хочу связаться с агентом,other,other,ikshana,False,False,False,operator_contact
+stg1_001855,Мне нужна помощь в составлении рекламации клиента,мне нужна помощь в составлении рекламации клиента,other,other,ikshana,False,False,False,unclassified
+stg1_001856,"Мне нужна помощь, чтобы подать иск","мне нужна помощь, чтобы подать иск",other,other,ikshana,False,False,False,legal_claim
+stg1_001857,"Я хочу подать рекламацию клиента, могу ли я получить помощь?","я хочу подать рекламацию клиента, могу ли я получить помощь?",other,other,ikshana,False,False,False,unclassified
+stg1_001858,"нужна помощь, чтобы поговорить с живым агентом","нужна помощь, чтобы поговорить с живым агентом",other,other,ikshana,False,False,False,operator_contact
+stg1_001859,"Я не знаю, как говорить с агентом человека","я не знаю, как говорить с агентом человека",other,other,ikshana,False,False,False,unclassified
+stg1_001860,можешь ли ты направить мне живого агента,можешь ли ты направить мне живого агента,other,other,ikshana,False,False,False,unclassified
+stg1_001861,подача жалобы клиента на вашу компанию,подача жалобы клиента на вашу компанию,other,other,ikshana,False,False,False,feedback_complaint
+stg1_001862,Можете ли вы помочь мне подать жалобу потребителя?,можете ли вы помочь мне подать жалобу потребителя?,other,other,ikshana,False,False,False,feedback_complaint
+stg1_001863,как мне поговорить с кем-то?,как мне поговорить с кем-то?,other,other,ikshana,False,False,False,operator_contact
+stg1_001864,нужна помощь в подаче иска против вашей организации,нужна помощь в подаче иска против вашей организации,other,other,ikshana,False,False,False,legal_claim
+stg1_001865,Я хочу подать иск против вашего бизнеса,я хочу подать иск против вашего бизнеса,other,other,ikshana,False,False,False,legal_claim
+stg1_001866,можно ли подать жалобу,можно ли подать жалобу,other,other,ikshana,False,False,False,feedback_complaint
+stg1_001867,помогите мне подать иск против вашей компании,помогите мне подать иск против вашей компании,other,other,ikshana,False,False,False,legal_claim
+stg1_001868,"я не знаю, что делать, чтобы возбудить иск потребителя","я не знаю, что делать, чтобы возбудить иск потребителя",other,other,ikshana,False,False,False,legal_claim
+stg1_001869,Я должен подать иск,я должен подать иск,other,other,ikshana,False,False,False,legal_claim
+stg1_001870,Я хочу предъявить претензию клиенту,я хочу предъявить претензию клиенту,other,other,ikshana,False,False,False,legal_claim
+stg1_001871,"мне нужна помощь, чтобы поговорить с живым агентом","мне нужна помощь, чтобы поговорить с живым агентом",other,other,ikshana,False,False,False,operator_contact
+stg1_001872,"Я не знаю, что мне нужно сделать, чтобы подать жалобу клиента.","я не знаю, что мне нужно сделать, чтобы подать жалобу клиента.",other,other,ikshana,False,False,False,feedback_complaint
+stg1_001873,можно ли подать чертову претензию от клиента?,можно ли подать чертову претензию от клиента?,other,other,ikshana,False,False,False,legal_claim
+stg1_001874,"очень полезно, могу я с кем-нибудь поболтать","очень полезно, могу я с кем-нибудь поболтать",other,other,ikshana,False,False,False,operator_contact
+stg1_001875,"Мне нужна помощь, чтобы поговорить с кем-нибудь","мне нужна помощь, чтобы поговорить с кем-нибудь",other,other,ikshana,False,False,False,operator_contact
+stg1_001876,куда я могу подать жалобу клиента на вашу компанию,куда я могу подать жалобу клиента на вашу компанию,other,other,ikshana,False,False,False,feedback_complaint
+stg1_001877,"Я тебя не понимаю, можешь помочь мне поговорить с агентом?","я тебя не понимаю, можешь помочь мне поговорить с агентом?",other,other,ikshana,False,False,False,operator_contact
+stg1_001878,"Я не знаю, как мне подать иск против вашей компании.","я не знаю, как мне подать иск против вашей компании.",other,other,ikshana,False,False,False,legal_claim
+stg1_001879,"я не знаю, что делать, чтобы поговорить с агентом","я не знаю, что делать, чтобы поговорить с агентом",other,other,ikshana,False,False,False,operator_contact
+stg1_001880,Я пытаюсь подать иск,я пытаюсь подать иск,other,other,ikshana,False,False,False,legal_claim
+stg1_001881,"Я не знаю, что мне нужно сделать, чтобы пообщаться с оператором","я не знаю, что мне нужно сделать, чтобы пообщаться с оператором",other,other,ikshana,False,False,False,unclassified
+stg1_001882,помогите мне подать жалобу на вашу компанию,помогите мне подать жалобу на вашу компанию,other,other,ikshana,False,False,False,feedback_complaint
+stg1_001883,куда я могу подать потребительский иск против вашей компании?,куда я могу подать потребительский иск против вашей компании?,other,other,ikshana,False,False,False,legal_claim
+stg1_001884,Я пытаюсь поговорить с агентом,я пытаюсь поговорить с агентом,other,other,ikshana,False,False,False,operator_contact
+stg1_001885,Мне нужна помощь в подаче иска против вашей компании.,мне нужна помощь в подаче иска против вашей компании.,other,other,ikshana,False,False,False,legal_claim
+stg1_001886,"Я не знаю, что делать, чтобы поговорить с кем-то","я не знаю, что делать, чтобы поговорить с кем-то",other,other,ikshana,False,False,False,operator_contact
+stg1_001887,помогите подать жалобу потребителя на вашу компанию,помогите подать жалобу потребителя на вашу компанию,other,other,ikshana,False,False,False,feedback_complaint
+stg1_001888,"мое впечатление от вас было ужасным, подайте жалобу","мое впечатление от вас было ужасным, подайте жалобу",other,other,ikshana,False,False,False,feedback_complaint
+stg1_001889,Мне нужна помощь в подаче жалобы клиента,мне нужна помощь в подаче жалобы клиента,other,other,ikshana,False,False,False,feedback_complaint
+stg1_001890,"Я хочу поговорить с человеком, как мне это сделать?","я хочу поговорить с человеком, как мне это сделать?",other,other,ikshana,False,False,False,operator_contact
+stg1_001891,помогите мне связаться с кем-нибудь,помогите мне связаться с кем-нибудь,other,other,ikshana,False,False,False,operator_contact
+stg1_001892,"Я звоню, чтобы подать жалобу клиента на вашу компанию.","я звоню, чтобы подать жалобу клиента на вашу компанию.",other,other,ikshana,False,False,False,feedback_complaint
+stg1_001893,"Я крайне недоволен тем, что ваши услуги помогают подать иск.","я крайне недоволен тем, что ваши услуги помогают подать иск.",other,other,ikshana,False,False,False,legal_claim
+stg1_001894,Можете ли вы помочь мне подать претензию клиента?,можете ли вы помочь мне подать претензию клиента?,other,other,ikshana,False,False,False,legal_claim
+stg1_001895,помогите мне подать иск клиента против вашей компании,помогите мне подать иск клиента против вашей компании,other,other,ikshana,False,False,False,legal_claim
+stg1_001896,Можете ли вы помочь мне подать иск против вашей компании?,можете ли вы помочь мне подать иск против вашей компании?,other,other,ikshana,False,False,False,legal_claim
+stg1_001897,"Я звоню, чтобы подать претензию","я звоню, чтобы подать претензию",other,other,ikshana,False,False,False,legal_claim
+stg1_001898,"мне нужна помощь, разговариваю с кем-то","мне нужна помощь, разговариваю с кем-то",other,other,ikshana,False,False,False,unclassified
+stg1_001899,помощь в предъявлении претензии клиенту против вашей организации,помощь в предъявлении претензии клиенту против вашей организации,other,other,ikshana,False,False,False,legal_claim
+stg1_001900,можешь помочь мне поговорить с ассистентом?,можешь помочь мне поговорить с ассистентом?,other,other,ikshana,False,False,False,operator_contact
+stg1_001901,"я не знаю, что мне нужно сделать, чтобы поговорить с ассистентом","я не знаю, что мне нужно сделать, чтобы поговорить с ассистентом",other,other,ikshana,False,False,False,operator_contact
+stg1_001902,Можете ли вы помочь мне составить претензию клиента?,можете ли вы помочь мне составить претензию клиента?,other,other,ikshana,False,False,False,legal_claim
+stg1_001903,как предъявить чертову претензию клиенту к вашему бизнесу?,как предъявить чертову претензию клиенту к вашему бизнесу?,other,other,ikshana,False,False,False,legal_claim
+stg1_001904,я пытаюсь поговорить с кем-нибудь,я пытаюсь поговорить с кем-нибудь,other,other,ikshana,False,False,False,operator_contact
+stg1_001905,могу ли я связаться с помощником?,могу ли я связаться с помощником?,other,other,ikshana,False,False,False,operator_contact
+stg1_001906,поговорить с агентом,поговорить с агентом,other,other,ikshana,False,False,False,operator_contact
+stg1_001907,пообщаться с помощником,пообщаться с помощником,other,other,ikshana,False,False,False,unclassified
+stg1_001908,Могу ли я подать рекламацию клиента?,могу ли я подать рекламацию клиента?,other,other,ikshana,False,False,False,unclassified
+stg1_001909,Я не могу поговорить с ассистентом,я не могу поговорить с ассистентом,other,other,ikshana,False,False,False,operator_contact
+stg1_001910,"Я недоволен вашей работой, пишите претензию.","я недоволен вашей работой, пишите претензию.",other,other,ikshana,False,False,False,legal_claim
+stg1_001911,"что мне нужно сделать, чтобы пообщаться с агентом?","что мне нужно сделать, чтобы пообщаться с агентом?",other,other,ikshana,False,False,False,unclassified
+stg1_001912,как я могу поговорить с оператором,как я могу поговорить с оператором,other,other,ikshana,False,False,False,operator_contact
+stg1_001913,"мне нужна помощь, чтобы поговорить с кем-то","мне нужна помощь, чтобы поговорить с кем-то",other,other,ikshana,False,False,False,operator_contact
+stg1_001914,"я не знаю, как подать жалобу клиента","я не знаю, как подать жалобу клиента",other,other,ikshana,False,False,False,feedback_complaint
+stg1_001915,помощь в составлении иска,помощь в составлении иска,other,other,ikshana,False,False,False,legal_claim
+stg1_001916,как мне подать претензию?,как мне подать претензию?,other,other,ikshana,False,False,False,legal_claim
+stg1_001917,"мне нужно поговорить с чертовым кое-кем, ты можешь мне помочь?","мне нужно поговорить с чертовым кое-кем, ты можешь мне помочь?",other,other,bitext,False,False,False,operator_contact
+stg1_001918,"у меня есть чертов комментарий о твоем бренде, мне нужна помощь, чтобы отправить его","у меня есть чертов комментарий о твоем бренде, мне нужна помощь, чтобы отправить его",other,other,bitext,False,False,False,unclassified
+stg1_001919,"Я хотел бы отправить долбанную идею, как сделать продукт лучше, где я могу это сделать?","я хотел бы отправить долбанную идею, как сделать продукт лучше, где я могу это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001920,"мне нужно отправить чертовы предложения, мне нужна помощь","мне нужно отправить чертовы предложения, мне нужна помощь",other,other,bitext,False,False,False,feedback_complaint
+stg1_001921,"Мне нужно поговорить с чертовым человеком, где мне это сделать?","мне нужно поговорить с чертовым человеком, где мне это сделать?",other,other,bitext,False,False,False,operator_contact
+stg1_001922,куда мне подать иск против вашего бизнеса,куда мне подать иск против вашего бизнеса,other,other,ikshana,False,False,False,legal_claim
+stg1_001923,"мне нужна помощь, чтобы отправить чертов отзыв","мне нужна помощь, чтобы отправить чертов отзыв",other,other,bitext,False,False,False,feedback_complaint
+stg1_001924,мне нужно поговорить с человеком,мне нужно поговорить с человеком,other,other,ikshana,False,False,False,operator_contact
+stg1_001925,"Я хотел бы отправить жалобы на продукт, не могли бы мне помочь","я хотел бы отправить жалобы на продукт, не могли бы мне помочь",other,other,bitext,False,False,False,feedback_complaint
+stg1_001926,"мне нужна помощь, чтобы отправить комментарий о вашем бренде","мне нужна помощь, чтобы отправить комментарий о вашем бренде",other,other,bitext,False,False,False,unclassified
+stg1_001927,"мне нужно оставить комментарии о продуктах, это поможет мне","мне нужно оставить комментарии о продуктах, это поможет мне",other,other,bitext,False,False,False,unclassified
+stg1_001928,нужно подать чертову жалобу от клиента,нужно подать чертову жалобу от клиента,other,other,ikshana,False,False,False,feedback_complaint
+stg1_001929,"Я хотел бы оставить комментарий, могу ли я получить помощь?","я хотел бы оставить комментарий, могу ли я получить помощь?",other,other,bitext,False,False,False,unclassified
+stg1_001930,"я не знаю, что мне нужно сделать, чтобы пообщаться с кем-нибудь","я не знаю, что мне нужно сделать, чтобы пообщаться с кем-нибудь",other,other,ikshana,False,False,False,operator_contact
+stg1_001931,"Я не знаю, как подать жалобу от потребителя.","я не знаю, как подать жалобу от потребителя.",other,other,ikshana,False,False,False,feedback_complaint
+stg1_001932,куда я могу подать жалобу на ваш бренд?,куда я могу подать жалобу на ваш бренд?,other,other,bitext,False,False,False,feedback_complaint
+stg1_001933,"Я вас не понимаю, мне нужна помощь, чтобы поговорить с агентом-человеком.","я вас не понимаю, мне нужна помощь, чтобы поговорить с агентом-человеком.",other,other,bitext,False,False,False,operator_contact
+stg1_001934,"мне нужно подать чертову жалобу на твою компанию, как это сделать","мне нужно подать чертову жалобу на твою компанию, как это сделать",other,other,bitext,False,False,False,feedback_complaint
+stg1_001935,"что мне нужно сделать, чтобы пообщаться с ассистентом?","что мне нужно сделать, чтобы пообщаться с ассистентом?",other,other,ikshana,False,False,False,unclassified
+stg1_001936,"мне нужно отправить чертов отзыв, мне нужна помощь","мне нужно отправить чертов отзыв, мне нужна помощь",other,other,bitext,False,False,False,feedback_complaint
+stg1_001937,"У меня есть чертов комментарий о твоем бренде, я бы хотел его отправить.","у меня есть чертов комментарий о твоем бренде, я бы хотел его отправить.",other,other,bitext,False,False,False,unclassified
+stg1_001938,как подать претензию клиента против вашей организации,как подать претензию клиента против вашей организации,other,other,ikshana,False,False,False,legal_claim
+stg1_001939,"Мне нужно подать жалобу на товар, могу ли я получить помощь?","мне нужно подать жалобу на товар, могу ли я получить помощь?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001940,"я не понимаю тебя, как я могу говорить с этим чертовым человеком","я не понимаю тебя, как я могу говорить с этим чертовым человеком",other,other,bitext,False,False,False,unclassified
+stg1_001941,"Я тебя не понимаю, мне нужна помощь, чтобы поговорить с кем-нибудь, блядь,","я тебя не понимаю, мне нужна помощь, чтобы поговорить с кем-нибудь, блядь,",other,other,bitext,False,False,False,operator_contact
+stg1_001942,"У меня есть предложение, как сделать ваш продукт лучше. Можете ли вы помочь мне отправить его?","у меня есть предложение, как сделать ваш продукт лучше. можете ли вы помочь мне отправить его?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001943,Мне нужно отправить чертов отзыв о твоем бренде. Можете мне помочь?,мне нужно отправить чертов отзыв о твоем бренде. можете мне помочь?,other,other,bitext,False,False,False,feedback_complaint
+stg1_001944,"я не знаю, что мне нужно сделать, чтобы поговорить с кем-то","я не знаю, что мне нужно сделать, чтобы поговорить с кем-то",other,other,ikshana,False,False,False,operator_contact
+stg1_001945,Куда мне снова подать жалобу клиента на вашу компанию?,куда мне снова подать жалобу клиента на вашу компанию?,other,other,ikshana,False,False,False,feedback_complaint
+stg1_001946,Мне нужно связаться с человеком,мне нужно связаться с человеком,other,other,ikshana,False,False,False,operator_contact
+stg1_001947,"Мне нужно отправить отзыв о продукте, где я могу это сделать?","мне нужно отправить отзыв о продукте, где я могу это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001948,Могу ли я подать рекламацию клиента против вашей компании,могу ли я подать рекламацию клиента против вашей компании,other,other,ikshana,False,False,False,unclassified
+stg1_001949,я не могу говорить с агентом,я не могу говорить с агентом,other,other,ikshana,False,False,False,unclassified
+stg1_001950,Мне нужно подать жалобу на ваш бренд. Вы мне поможете?,мне нужно подать жалобу на ваш бренд. вы мне поможете?,other,other,bitext,False,False,False,feedback_complaint
+stg1_001951,"У меня есть жалоба, помогите мне ее подать","у меня есть жалоба, помогите мне ее подать",other,other,bitext,False,False,False,feedback_complaint
+stg1_001952,"Я хотел бы поговорить с чертовым агентом-человеком, помогите мне.","я хотел бы поговорить с чертовым агентом-человеком, помогите мне.",other,other,bitext,False,False,False,operator_contact
+stg1_001953,"Мне нужно отправить чертов отзыв, могу ли я получить помощь?","мне нужно отправить чертов отзыв, могу ли я получить помощь?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001954,подача потребительского иска против вашего бизнеса,подача потребительского иска против вашего бизнеса,other,other,ikshana,False,False,False,legal_claim
+stg1_001955,подача иска против вашего бизнеса,подача иска против вашего бизнеса,other,other,ikshana,False,False,False,legal_claim
+stg1_001956,Я пытаюсь поговорить с ассистентом,я пытаюсь поговорить с ассистентом,other,other,ikshana,False,False,False,operator_contact
+stg1_001957,"Я не знаю, как говорить с агентом-человеком","я не знаю, как говорить с агентом-человеком",other,other,ikshana,False,False,False,unclassified
+stg1_001958,хочу подать жалобу потребителя на вашу организацию,хочу подать жалобу потребителя на вашу организацию,other,other,ikshana,False,False,False,feedback_complaint
+stg1_001959,"Я не знаю, что мне нужно сделать, чтобы предъявить потребительскую претензию.","я не знаю, что мне нужно сделать, чтобы предъявить потребительскую претензию.",other,other,ikshana,False,False,False,legal_claim
+stg1_001960,"у меня есть отзыв о продукте, помогите, мистер, отправьте его","у меня есть отзыв о продукте, помогите, мистер, отправьте его",other,other,bitext,False,False,False,feedback_complaint
+stg1_001961,"я не понимаю, тебе нужна помощь, чтобы поговорить с чертовым человеком","я не понимаю, тебе нужна помощь, чтобы поговорить с чертовым человеком",other,other,bitext,False,False,False,operator_contact
+stg1_001962,"Я хотел бы поговорить с оператором, как это сделать?","я хотел бы поговорить с оператором, как это сделать?",other,other,bitext,False,False,False,operator_contact
+stg1_001963,"Я хотел бы оставить комментарий о продукте, могу ли я получить помощь?","я хотел бы оставить комментарий о продукте, могу ли я получить помощь?",other,other,bitext,False,False,False,unclassified
+stg1_001964,"мне нужна помощь, чтобы поговорить с агентом-человеком","мне нужна помощь, чтобы поговорить с агентом-человеком",other,other,ikshana,False,False,False,operator_contact
+stg1_001965,"У меня есть комментарий о вашей компании, помогите мне его отправить.","у меня есть комментарий о вашей компании, помогите мне его отправить.",other,other,bitext,False,False,False,unclassified
+stg1_001966,Я пытаюсь подать жалобу от клиента,я пытаюсь подать жалобу от клиента,other,other,ikshana,False,False,False,feedback_complaint
+stg1_001967,"Я тебя не понимаю, помоги мне поговорить с кем-нибудь","я тебя не понимаю, помоги мне поговорить с кем-нибудь",other,other,bitext,False,False,False,operator_contact
+stg1_001968,"у меня есть предложение по улучшению вашего продукта, можете ли вы его прислать?","у меня есть предложение по улучшению вашего продукта, можете ли вы его прислать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001969,Я хочу подать жалобу на вашу компанию,я хочу подать жалобу на вашу компанию,other,other,bitext,False,False,False,feedback_complaint
+stg1_001970,"мне нужна помощь, чтобы поговорить с чертовым оператором","мне нужна помощь, чтобы поговорить с чертовым оператором",other,other,bitext,False,False,False,operator_contact
+stg1_001971,мне нужна помощь с отправкой чертовых жалоб на продукт,мне нужна помощь с отправкой чертовых жалоб на продукт,other,other,bitext,False,False,False,feedback_complaint
+stg1_001972,"мне нужно предложить чертову идею, как сделать продукт лучше, не мог бы ты мне помочь","мне нужно предложить чертову идею, как сделать продукт лучше, не мог бы ты мне помочь",other,other,bitext,False,False,False,feedback_complaint
+stg1_001973,можно ли отправить отзыв о продукте?,можно ли отправить отзыв о продукте?,other,other,bitext,False,False,False,feedback_complaint
+stg1_001974,Мне нужна помощь в отправке идей для продукта,мне нужна помощь в отправке идей для продукта,other,other,bitext,False,False,False,unclassified
+stg1_001975,можно ли оставить чертов отзыв,можно ли оставить чертов отзыв,other,other,bitext,False,False,False,feedback_complaint
+stg1_001976,"нужна помощь, разговариваю с оператором","нужна помощь, разговариваю с оператором",other,other,ikshana,False,False,False,unclassified
+stg1_001977,"нужно поговорить с агентом, где я могу это сделать","нужно поговорить с агентом, где я могу это сделать",other,other,bitext,False,False,False,operator_contact
+stg1_001978,Мне нужно отправить чертовы жалобы на продукт.,мне нужно отправить чертовы жалобы на продукт.,other,other,bitext,False,False,False,feedback_complaint
+stg1_001979,хочу помочь поговорить с человеком,хочу помочь поговорить с человеком,other,other,ikshana,False,False,False,operator_contact
+stg1_001980,"у меня есть отзыв о вашей компании, не могли бы вы помочь мне отправить его?","у меня есть отзыв о вашей компании, не могли бы вы помочь мне отправить его?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001981,Мне нужна помощь в разговоре с агентом-человеком,мне нужна помощь в разговоре с агентом-человеком,other,other,ikshana,False,False,False,unclassified
+stg1_001982,"у меня есть чертов отзыв о вашей компании, помогите мне отправить его","у меня есть чертов отзыв о вашей компании, помогите мне отправить его",other,other,bitext,False,False,False,feedback_complaint
+stg1_001983,"Я хочу оставить отзыв о вашей компании, могу ли я получить некоторую помощь?","я хочу оставить отзыв о вашей компании, могу ли я получить некоторую помощь?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001984,"нужно отправить идеи для продукта, где мне это сделать","нужно отправить идеи для продукта, где мне это сделать",other,other,bitext,False,False,False,feedback_complaint
+stg1_001985,Нужна помощь в подаче иска клиента против вашей организации,нужна помощь в подаче иска клиента против вашей организации,other,other,ikshana,False,False,False,legal_claim
+stg1_001986,"Я хочу представить идею продукта, мне нужна помощь","я хочу представить идею продукта, мне нужна помощь",other,other,bitext,False,False,False,feedback_complaint
+stg1_001987,"Мне нужно подать чертову жалобу на вашу компанию, помогите мне.","мне нужно подать чертову жалобу на вашу компанию, помогите мне.",other,other,bitext,False,False,False,feedback_complaint
+stg1_001988,"Мне нужно отправить чертово предложение по продукту, как это сделать?","мне нужно отправить чертово предложение по продукту, как это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001989,"Мне нужно оставить отзыв, где это сделать?","мне нужно оставить отзыв, где это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001990,"нужно представить чертовы идеи по улучшению продукта, помогите мне","нужно представить чертовы идеи по улучшению продукта, помогите мне",other,other,bitext,False,False,False,feedback_complaint
+stg1_001991,"Я хочу подать чертову жалобу, как я могу это сделать?","я хочу подать чертову жалобу, как я могу это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001992,"хочу оставить чертов отзыв, ты мне поможешь?","хочу оставить чертов отзыв, ты мне поможешь?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001993,"опыт с тобой был плохим, помогите мне подать жалобу","опыт с тобой был плохим, помогите мне подать жалобу",other,other,ikshana,False,False,False,feedback_complaint
+stg1_001994,Я хотел бы отправить предложения по улучшению продукта. Можете ли вы мне помочь?,я хотел бы отправить предложения по улучшению продукта. можете ли вы мне помочь?,other,other,bitext,False,False,False,feedback_complaint
+stg1_001995,"хочу предложить идею по улучшению продукта, как я могу это сделать","хочу предложить идею по улучшению продукта, как я могу это сделать",other,other,bitext,False,False,False,feedback_complaint
+stg1_001996,"мне нужна помощь, чтобы отправить предложение","мне нужна помощь, чтобы отправить предложение",other,other,bitext,False,False,False,feedback_complaint
+stg1_001997,"Мне нужно поговорить с чертовым агентом, могу ли я получить помощь?","мне нужно поговорить с чертовым агентом, могу ли я получить помощь?",other,other,bitext,False,False,False,operator_contact
+stg1_001998,"Я хотел бы предложить идеи по улучшению продукта, где мне это сделать?","я хотел бы предложить идеи по улучшению продукта, где мне это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_001999,Маки жалоба,маки жалоба,other,other,ikshana,False,False,False,feedback_complaint
+stg1_002000,"Я хочу отправить идею продукта, не могли бы вы мне помочь?","я хочу отправить идею продукта, не могли бы вы мне помочь?",other,other,bitext,False,False,False,feedback_complaint
+stg1_002001,"у меня чертов комментарий к товару, помоги мне его отправить","у меня чертов комментарий к товару, помоги мне его отправить",other,other,bitext,False,False,False,unclassified
+stg1_002002,"Я хотел бы отправить отзывы о продуктах, где я могу это сделать","я хотел бы отправить отзывы о продуктах, где я могу это сделать",other,other,bitext,False,False,False,feedback_complaint
+stg1_002003,Я хотел бы оставить комментарий о вашем бренде,я хотел бы оставить комментарий о вашем бренде,other,other,bitext,False,False,False,unclassified
+stg1_002004,"Я хотел бы отправить отзыв, где я могу это сделать","я хотел бы отправить отзыв, где я могу это сделать",other,other,bitext,False,False,False,feedback_complaint
+stg1_002005,"Я хочу отправить идею продукта, как это сделать?","я хочу отправить идею продукта, как это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_002006,"Мне нужно отправить чертов отзыв о продукте, могу ли я получить помощь?","мне нужно отправить чертов отзыв о продукте, могу ли я получить помощь?",other,other,bitext,False,False,False,feedback_complaint
+stg1_002007,Я хотел бы предложить идею по улучшению продукта,я хотел бы предложить идею по улучшению продукта,other,other,bitext,False,False,False,feedback_complaint
+stg1_002008,нужна помощь в связи с оператором,нужна помощь в связи с оператором,other,other,ikshana,False,False,False,unclassified
+stg1_002009,где я могу отправить чертово предложение по продукту?,где я могу отправить чертово предложение по продукту?,other,other,bitext,False,False,False,feedback_complaint
+stg1_002010,"мне нужно оставить чертов комментарий, где это сделать","мне нужно оставить чертов комментарий, где это сделать",other,other,bitext,False,False,False,unclassified
+stg1_002011,"хочу поговорить с человеком, могу ли я получить помощь","хочу поговорить с человеком, могу ли я получить помощь",other,other,bitext,False,False,False,operator_contact
+stg1_002012,Можете ли вы помочь мне подать иск клиента против вашей компании?,можете ли вы помочь мне подать иск клиента против вашей компании?,other,other,ikshana,False,False,False,legal_claim
+stg1_002013,"Мне нужно отправить чертовы предложения по продукту, вы мне поможете?","мне нужно отправить чертовы предложения по продукту, вы мне поможете?",other,other,bitext,False,False,False,feedback_complaint
+stg1_002014,можешь помочь мне поговорить с кем-нибудь?,можешь помочь мне поговорить с кем-нибудь?,other,other,bitext,False,False,False,operator_contact
+stg1_002015,"Я не знаю, как мне подать иск","я не знаю, как мне подать иск",other,other,ikshana,False,False,False,legal_claim
+stg1_002016,Я пытаюсь подать жалобу,я пытаюсь подать жалобу,other,other,ikshana,False,False,False,feedback_complaint
+stg1_002017,"Я не доволен вашей работой, подам жалобу на потребителя.","я не доволен вашей работой, подам жалобу на потребителя.",other,other,ikshana,False,False,False,feedback_complaint
+stg1_002018,помогите мне подать потребительский иск,помогите мне подать потребительский иск,other,other,ikshana,False,False,False,legal_claim
+stg1_002019,Я пытаюсь поговорить с кем-то,я пытаюсь поговорить с кем-то,other,other,ikshana,False,False,False,operator_contact
+stg1_002020,"мне нужно оставлять чертовы комментарии о продукте, как я могу это сделать","мне нужно оставлять чертовы комментарии о продукте, как я могу это сделать",other,other,bitext,False,False,False,unclassified
+stg1_002021,нужна помощь в подаче иска потребителя,нужна помощь в подаче иска потребителя,other,other,ikshana,False,False,False,legal_claim
+stg1_002022,куда отправлять чертовы предложения по улучшению продукта,куда отправлять чертовы предложения по улучшению продукта,other,other,bitext,False,False,False,feedback_complaint
+stg1_002023,"Я хотел бы поговорить с чертовым агентом-человеком, могу ли я получить помощь?","я хотел бы поговорить с чертовым агентом-человеком, могу ли я получить помощь?",other,other,bitext,False,False,False,operator_contact
+stg1_002024,"Я хочу оставить комментарий о вашем бренде, мне нужна помощь","я хочу оставить комментарий о вашем бренде, мне нужна помощь",other,other,bitext,False,False,False,unclassified
+stg1_002025,"Я хотел бы оставить чертовски предложение, могу ли я получить помощь?","я хотел бы оставить чертовски предложение, могу ли я получить помощь?",other,other,bitext,False,False,False,feedback_complaint
+stg1_002026,как я могу оставить чертов отзыв о продукте,как я могу оставить чертов отзыв о продукте,other,other,bitext,False,False,False,feedback_complaint
+stg1_002027,"Мне нужно отправить идею, могу ли я получить помощь?","мне нужно отправить идею, могу ли я получить помощь?",other,other,bitext,False,False,False,feedback_complaint
+stg1_002028,"Мне нужно отправить комментарий о вашем бренде, можете ли вы мне помочь?","мне нужно отправить комментарий о вашем бренде, можете ли вы мне помочь?",other,other,bitext,False,False,False,unclassified
+stg1_002029,"Мне нужно отправить отзыв о вашей компании, где это сделать?","мне нужно отправить отзыв о вашей компании, где это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_002030,можете помочь мне отправить отзыв о продукте,можете помочь мне отправить отзыв о продукте,other,other,bitext,False,False,False,feedback_complaint
+stg1_002031,"у меня есть офигенный отзыв о продукте, мог бы его использовать","у меня есть офигенный отзыв о продукте, мог бы его использовать",other,other,bitext,False,False,False,feedback_complaint
+stg1_002032,можешь помочь мне связаться с кем-нибудь,можешь помочь мне связаться с кем-нибудь,other,other,ikshana,False,False,False,operator_contact
+stg1_002033,мне нужна помощь в составлении потребительской претензии,мне нужна помощь в составлении потребительской претензии,other,other,ikshana,False,False,False,legal_claim
+stg1_002034,"нужно отправить чертовски предложение по улучшению продукта, помогите мне","нужно отправить чертовски предложение по улучшению продукта, помогите мне",other,other,bitext,False,False,False,feedback_complaint
+stg1_002035,"хочу оставить отзыв о вашем бренде, могу ли я получить помощь","хочу оставить отзыв о вашем бренде, могу ли я получить помощь",other,other,bitext,False,False,False,feedback_complaint
+stg1_002036,"я не понимаю, как общаться с кем-то","я не понимаю, как общаться с кем-то",other,other,bitext,False,False,False,unclassified
+stg1_002037,"Мне нужно оставить отзыв о продукте, где это сделать?","мне нужно оставить отзыв о продукте, где это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_002038,где я могу оставить отзыв о вашем бренде?,где я могу оставить отзыв о вашем бренде?,other,other,bitext,False,False,False,feedback_complaint
+stg1_002039,Мне нужна помощь в общении с кем-то,мне нужна помощь в общении с кем-то,other,other,ikshana,False,False,False,unclassified
+stg1_002040,"Я хотел бы отправить предложение по улучшению продукта, где это сделать","я хотел бы отправить предложение по улучшению продукта, где это сделать",other,other,bitext,False,False,False,feedback_complaint
+stg1_002041,"Мне нужно с кем-нибудь поговорить, как мне это сделать?","мне нужно с кем-нибудь поговорить, как мне это сделать?",other,other,bitext,False,False,False,operator_contact
+stg1_002042,помоги мне пообщаться с кем-нибудь,помоги мне пообщаться с кем-нибудь,other,other,ikshana,False,False,False,operator_contact
+stg1_002043,Мне нужно отправить отзыв,мне нужно отправить отзыв,other,other,bitext,False,False,False,feedback_complaint
+stg1_002044,Я пытаюсь подать жалобу клиента,я пытаюсь подать жалобу клиента,other,other,ikshana,False,False,False,feedback_complaint
+stg1_002045,Можете ли вы помочь мне подать гребаную рекламацию от клиента?,можете ли вы помочь мне подать гребаную рекламацию от клиента?,other,other,ikshana,False,False,False,unclassified
+stg1_002046,"Я хотел бы отправить комментарий о вашем бренде, где это сделать","я хотел бы отправить комментарий о вашем бренде, где это сделать",other,other,bitext,False,False,False,unclassified
+stg1_002047,"мне нужно поговорить с чертовым человеком, где я могу это сделать","мне нужно поговорить с чертовым человеком, где я могу это сделать",other,other,bitext,False,False,False,operator_contact
+stg1_002048,"Мне нужно отправить чертов отзыв о вашем бренде, вы можете мне помочь?","мне нужно отправить чертов отзыв о вашем бренде, вы можете мне помочь?",other,other,bitext,False,False,False,feedback_complaint
+stg1_002049,как отправить отзыв о вашем филиале?,как отправить отзыв о вашем филиале?,other,other,bitext,False,False,False,feedback_complaint
+stg1_002050,помогите мне оставить отзыв о продукте,помогите мне оставить отзыв о продукте,other,other,bitext,False,False,False,feedback_complaint
+stg1_002051,можешь помочь мне поговорить с чертовым человеком?,можешь помочь мне поговорить с чертовым человеком?,other,other,bitext,False,False,False,operator_contact
+stg1_002052,"Мне нужно подать жалобу, могу ли я получить помощь?","мне нужно подать жалобу, могу ли я получить помощь?",other,other,ikshana,False,False,False,feedback_complaint
+stg1_002053,"waqnna, отправь чертов отзыв, можешь мне помочь?","waqnna, отправь чертов отзыв, можешь мне помочь?",other,other,bitext,False,False,False,feedback_complaint
+stg1_002054,мне нужно поговорить с кем-нибудь,мне нужно поговорить с кем-нибудь,other,other,bitext,False,False,False,operator_contact
+stg1_002055,"Мне нужно отправить отзыв, помогите мне","мне нужно отправить отзыв, помогите мне",other,other,bitext,False,False,False,feedback_complaint
+stg1_002056,"Я хотел бы поговорить с агентом, могу ли я получить помощь?","я хотел бы поговорить с агентом, могу ли я получить помощь?",other,other,bitext,False,False,False,operator_contact
+stg1_002057,нужно поговорить с чертовым человеком,нужно поговорить с чертовым человеком,other,other,bitext,False,False,False,operator_contact
+stg1_002058,"Я бы хотел поговорить с кем-нибудь, мне нужна помощь","я бы хотел поговорить с кем-нибудь, мне нужна помощь",other,other,bitext,False,False,False,operator_contact
+stg1_002059,"мне нужно поговорить с агентом, мог бы мне помочь","мне нужно поговорить с агентом, мог бы мне помочь",other,other,ikshana,False,False,False,operator_contact
+stg1_002060,"Мне нужно оставить отзыв о вашей компании, как я могу это сделать?","мне нужно оставить отзыв о вашей компании, как я могу это сделать?",other,other,bitext,False,False,False,feedback_complaint
+stg1_002912,Хочу пожаловаться на обслуживание,хочу пожаловаться на обслуживание,other,other,synthetic_dataset,True,False,False,feedback_complaint
+stg1_002913,Непонятно что делать,непонятно что делать,other,other,synthetic_dataset,True,False,False,unclassified
+stg1_002945,"Спасибо, всё отлично!","спасибо, всё отлично!",other,other,synthetic_dataset,True,False,False,unclassified
+stg1_002957,Посоветуйте что-нибудь,посоветуйте что-нибудь,other,other,synthetic_dataset,True,False,False,unclassified
+stg1_002986,Хочу оставить отзыв,хочу оставить отзыв,other,other,synthetic_dataset,True,False,False,feedback_complaint
+stg1_002995,Ужасный сервис,ужасный сервис,other,other,synthetic_dataset,True,False,False,unclassified
+stg1_002997,Вы лучший магазин!,вы лучший магазин!,other,other,synthetic_dataset,True,False,False,unclassified
+stg1_003006,Мне нужна помощь,мне нужна помощь,other,other,synthetic_dataset,True,False,False,unclassified
+stg1_003010,У меня сложный вопрос,у меня сложный вопрос,other,other,synthetic_dataset,True,False,False,unclassified
+stg1_003032,Куда писать жалобу?,куда писать жалобу?,other,other,synthetic_dataset,True,False,False,feedback_complaint

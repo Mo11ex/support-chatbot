@@ -1,0 +1,17 @@
+{
+  "model_name": "DeepPavlov/rubert-base-cased",
+  "categories": [
+    "account",
+    "delivery",
+    "general_info",
+    "order_status",
+    "other",
+    "payment_refund",
+    "product_info",
+    "promo_loyalty",
+    "return_exchange",
+    "technical_issue"
+  ],
+  "accuracy": 0.9655765920826161,
+  "macro_f1": 0.966159014298729
+}

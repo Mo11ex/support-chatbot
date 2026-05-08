@@ -1,26 +1,20 @@
 # Python
 __pycache__/
 *.py[cod]
+*.pyo
 *.egg-info/
-venv/
-.venv/
 *.egg
+.venv/
+venv/
+*/venv/
+.venv-ml
 
-# ML модели (тяжёлые)
-*.pt
-*.bin
-*.safetensors
-
-# Данные
-*.csv
-*.parquet
-
-# Окружение
+# Secrets
 .env
-backend/.env
+*.env
 
 # IDE
-.vscode/settings.json
+.vscode/
 .idea/
 
 # OS
@@ -30,42 +24,43 @@ Thumbs.db
 # Jupyter
 .ipynb_checkpoints/
 
-.zip
-
-# --- Python ---
-__pycache__/
-*.pyc
-.venv/
-venv/
-
-# --- IDE ---
-.vscode/
-.idea/
-
-# --- Env / secrets ---
-.env
-*.env
-
-# --- ML models / caches ---
-ml/
-app/ml/
-*.pt
-*.bin
-*.safetensors
-
-# HuggingFace cache (если случайно подтянется в проект)
-.cache/
-**/.cache/
-huggingface/
-hf_cache/
-
-# Logs / artifacts
+# Logs
 *.log
-
-# MLflow
 mlruns/
 ml/mlruns/
+logs/
+ml/logs/
 
 # Build
 build/
 dist/
+*.zip
+
+# Heavy model artifacts
+*.pt
+*.bin
+*.safetensors
+
+# Optional runtime model artifacts in backend
+backend/app/ml/**/*.xml
+backend/app/ml/**/*.bin
+backend/app/ml/**/*.onnx
+backend/app/ml/**/*.pt
+backend/app/ml/**/*.safetensors
+backend/app/ml/rag/
+
+ml/logs/mlflow.db
+ml/logs/mlruns/
+mlruns/
+mlflow.db
+
+# Generated trained classifier artifacts
+ml/models/classifier/stage2-*/
+ml/models/classifier/stage3-*/
+ml/models/classifier/**/trainer_output/
+ml/models/llm/*
+
+# Stage 4 retriever artifacts
+ml/models/retriever/stage4*/
+ml/models/retriever/stage4_*/
+

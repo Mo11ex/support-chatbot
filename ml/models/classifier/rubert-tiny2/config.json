@@ -1,0 +1,17 @@
+{
+  "model_name": "cointegrated/rubert-tiny2",
+  "categories": [
+    "account",
+    "delivery",
+    "general_info",
+    "order_status",
+    "other",
+    "payment_refund",
+    "product_info",
+    "promo_loyalty",
+    "return_exchange",
+    "technical_issue"
+  ],
+  "accuracy": 0.955249569707401,
+  "macro_f1": 0.9555460351245054
+}

@@ -1,0 +1,201 @@
+id,text,label,expected_route,expected_doc_id,notes
+1,Где мой заказ?,order_status,order_status,,нормальный
+2,Какой статус моего заказа?,order_status,order_status,,нормальный
+3,Хочу узнать где сейчас мой заказ,order_status,order_status,,нормальный
+4,Когда придёт мой заказ номер 45678?,order_status,order_status,,с номером
+5,Можно узнать статус доставки заказа?,order_status,order_status,,нормальный
+6,че с моим заказом?,order_status,order_status,,разговорный
+7,заказ где блин,order_status,order_status,,разговорный
+8,ну где заказ-то?,order_status,order_status,,разговорный
+9,мой заказ вообще отправили?,order_status,order_status,,разговорный
+10,алло где посылка,order_status,order_status,,разговорный
+11,где мой зказ,order_status,order_status,,опечатка
+12,стутус заказа,order_status,order_status,,опечатка
+13,хочу знать стаутс заказа,order_status,order_status,,опечатка
+14,заказ сттатус,order_status,order_status,,опечатка
+15,мой закз где?,order_status,order_status,,опечатка
+16,заказ?,order_status,order_status,,короткий
+17,статус,order_status,order_status,,короткий
+18,трекинг,order_status,order_status,,короткий
+19,отследить,order_status,order_status,,короткий
+20,номер заказа 99012,order_status,order_status,,пограничный
+21,Как оформить доставку?,delivery,faq_handler,faq_delivery,нормальный
+22,Сколько стоит доставка?,delivery,faq_handler,faq_delivery,нормальный
+23,Какие сроки доставки?,delivery,faq_handler,faq_delivery,нормальный
+24,Доставляете ли в мой город?,delivery,faq_handler,faq_delivery,нормальный
+25,Есть ли самовывоз?,delivery,faq_handler,faq_delivery,нормальный
+26,доставка скока стоит?,delivery,faq_handler,faq_delivery,разговорный
+27,а доставка бесплатная?,delivery,faq_handler,faq_delivery,разговорный
+28,чё по доставке?,delivery,faq_handler,faq_delivery,разговорный
+29,курьером можно?,delivery,faq_handler,faq_delivery,разговорный
+30,доставите завтра?,delivery,faq_handler,faq_delivery,разговорный
+31,даставка сколько?,delivery,faq_handler,faq_delivery,опечатка
+32,как оформть доставку,delivery,faq_handler,faq_delivery,опечатка
+33,дастака в регионы,delivery,faq_handler,faq_delivery,опечатка
+34,доствка есть?,delivery,faq_handler,faq_delivery,опечатка
+35,самовызов можно?,delivery,faq_handler,faq_delivery,опечатка
+36,доставка,delivery,faq_handler,faq_delivery,короткий
+37,курьер,delivery,faq_handler,faq_delivery,короткий
+38,сроки,delivery,faq_handler,,пограничный
+39,СДЭК,delivery,faq_handler,faq_delivery,короткий
+40,привезти,delivery,faq_handler,,пограничный
+41,Как оплатить заказ?,payment_refund,faq_handler,faq_payment,нормальный
+42,Какие способы оплаты?,payment_refund,faq_handler,faq_payment,нормальный
+43,Можно ли оплатить картой?,payment_refund,faq_handler,faq_payment,нормальный
+44,Как вернуть деньги за заказ?,payment_refund,faq_handler,faq_return,нормальный refund
+45,Когда вернут деньги?,payment_refund,faq_handler,faq_return,нормальный refund
+46,картой можно?,payment_refund,faq_handler,faq_payment,разговорный
+47,а наличкой принимаете?,payment_refund,faq_handler,faq_payment,разговорный
+48,деньги когда вернут?,payment_refund,faq_handler,faq_return,разговорный refund
+49,оплатить при получении можно?,payment_refund,faq_handler,faq_payment,разговорный
+50,чё по оплате?,payment_refund,faq_handler,faq_payment,разговорный
+51,аплатить как?,payment_refund,faq_handler,faq_payment,опечатка
+52,вирнут деньги?,payment_refund,faq_handler,faq_return,опечатка refund
+53,оплата катрой,payment_refund,faq_handler,faq_payment,опечатка
+54,возрат денег,payment_refund,faq_handler,faq_return,опечатка refund
+55,как аплатить,payment_refund,faq_handler,faq_payment,опечатка
+56,оплата,payment_refund,faq_handler,faq_payment,короткий
+57,рассрочка,payment_refund,faq_handler,faq_payment,короткий
+58,возврат денег,payment_refund,faq_handler,faq_return,короткий refund
+59,СБП,payment_refund,faq_handler,faq_payment,короткий
+60,рефанд,payment_refund,faq_handler,faq_return,пограничный refund
+61,Как вернуть товар?,return_exchange,faq_handler,faq_return,нормальный
+62,Какие условия возврата?,return_exchange,faq_handler,faq_return,нормальный
+63,Можно ли обменять товар?,return_exchange,faq_handler,faq_return,нормальный
+64,Сколько дней на возврат товара?,return_exchange,faq_handler,faq_return,нормальный
+65,Нужен ли чек для возврата?,return_exchange,faq_handler,faq_return,нормальный
+66,хочу вернуть товар,return_exchange,faq_handler,faq_return,разговорный
+67,можно обменять?,return_exchange,faq_handler,faq_return,разговорный
+68,не подошло хочу обратно,return_exchange,faq_handler,faq_return,разговорный
+69,как сдать товар?,return_exchange,faq_handler,faq_return,разговорный
+70,можно сдать обратно?,return_exchange,faq_handler,faq_return,разговорный
+71,как вирнуть товар,return_exchange,faq_handler,faq_return,опечатка
+72,возрат товара,return_exchange,faq_handler,faq_return,опечатка
+73,обмен тавара,return_exchange,faq_handler,faq_return,опечатка
+74,как здать товар,return_exchange,faq_handler,faq_return,опечатка
+75,вирнуть можно?,return_exchange,faq_handler,faq_return,опечатка
+76,возврат,return_exchange,faq_handler,faq_return,короткий
+77,обмен,return_exchange,faq_handler,faq_return,короткий
+78,сдать,return_exchange,faq_handler,faq_return,короткий
+79,не подошёл размер,return_exchange,faq_handler,faq_return,пограничный
+80,брак,return_exchange,faq_handler,faq_return,пограничный
+81,Как применить промокод?,promo_loyalty,faq_handler,faq_promo,нормальный
+82,Есть ли сейчас акции?,promo_loyalty,faq_handler,faq_promo,нормальный
+83,Где ввести промокод?,promo_loyalty,faq_handler,faq_promo,нормальный
+84,Промокод не работает,promo_loyalty,faq_handler,faq_promo,нормальный
+85,Есть программа лояльности?,promo_loyalty,faq_handler,faq_promo,нормальный
+86,скидка есть?,promo_loyalty,faq_handler,faq_promo,разговорный
+87,промик дайте,promo_loyalty,faq_handler,faq_promo,разговорный
+88,а акции какие щас?,promo_loyalty,faq_handler,faq_promo,разговорный
+89,бонусы как потратить?,promo_loyalty,faq_handler,faq_promo,разговорный
+90,промокод куда вводить?,promo_loyalty,faq_handler,faq_promo,разговорный
+91,прамокод не работает,promo_loyalty,faq_handler,faq_promo,опечатка
+92,скдика есть?,promo_loyalty,faq_handler,faq_promo,опечатка
+93,как ввести промакод,promo_loyalty,faq_handler,faq_promo,опечатка
+94,акцыи какие?,promo_loyalty,faq_handler,faq_promo,опечатка
+95,бонусы как потратить,promo_loyalty,faq_handler,faq_promo,опечатка
+96,промокод,promo_loyalty,faq_handler,faq_promo,короткий
+97,скидка,promo_loyalty,faq_handler,faq_promo,короткий
+98,акция,promo_loyalty,faq_handler,faq_promo,короткий
+99,бонусы,promo_loyalty,faq_handler,faq_promo,короткий
+100,лояльность,promo_loyalty,faq_handler,faq_promo,пограничный
+101,Не могу войти в аккаунт,account,fallback,,нормальный
+102,Как изменить email?,account,fallback,,нормальный
+103,Хочу удалить аккаунт,account,fallback,,нормальный
+104,Как восстановить пароль?,account,fallback,,нормальный
+105,Как зарегистрироваться?,account,fallback,,нормальный
+106,не могу зайти в личный кабинет,account,fallback,,разговорный
+107,пароль забыл,account,fallback,,разговорный
+108,как поменять телефон в профиле?,account,fallback,,разговорный
+109,удалите мой аккаунт,account,fallback,,разговорный
+110,регистрация как?,account,fallback,,разговорный
+111,ни магу войти,account,fallback,,опечатка
+112,как васстановить пороль,account,fallback,,опечатка
+113,хочу удолить аккаунт,account,fallback,,опечатка
+114,как зарегестрироватся,account,fallback,,опечатка
+115,изминить почту,account,fallback,,опечатка
+116,аккаунт,account,fallback,,короткий
+117,пароль,account,fallback,,короткий
+118,регистрация,account,fallback,,короткий
+119,личный кабинет,account,fallback,,короткий
+120,профиль,account,fallback,,пограничный
+121,Сайт не работает,technical_issue,escalation,,нормальный
+122,Не могу оформить заказ на сайте,technical_issue,escalation,,нормальный
+123,Приложение вылетает,technical_issue,escalation,,нормальный
+124,Не загружаются страницы,technical_issue,escalation,,нормальный
+125,Ошибка при оплате на сайте,technical_issue,escalation,,нормальный
+126,сайт глючит,technical_issue,escalation,,разговорный
+127,ничего не грузится,technical_issue,escalation,,разговорный
+128,приложуха падает,technical_issue,escalation,,разговорный
+129,кнопка не работает,technical_issue,escalation,,разговорный
+130,баг у вас,technical_issue,escalation,,разговорный
+131,сайт ни работает,technical_issue,escalation,,опечатка
+132,не магу оформить заказ,technical_issue,escalation,,опечатка
+133,прилажение вылитает,technical_issue,escalation,,опечатка
+134,страницы ни грузятся,technical_issue,escalation,,опечатка
+135,ашибка при оплате,technical_issue,escalation,,опечатка
+136,баг,technical_issue,escalation,,короткий
+137,ошибка,technical_issue,escalation,,короткий
+138,глючит,technical_issue,escalation,,короткий
+139,не работает,technical_issue,escalation,,пограничный
+140,зависло,technical_issue,escalation,,пограничный
+141,Расскажите про этот товар,product_info,fallback,,нормальный
+142,Есть ли этот товар в наличии?,product_info,fallback,,нормальный
+143,Какие характеристики у товара?,product_info,fallback,,нормальный
+144,Есть в другом цвете?,product_info,fallback,,нормальный
+145,Когда появится в наличии?,product_info,fallback,,нормальный
+146,этот товар есть?,product_info,fallback,,разговорный
+147,а другой цвет есть?,product_info,fallback,,разговорный
+148,что за товар?,product_info,fallback,,разговорный
+149,расскажи про эту штуку,product_info,fallback,,разговорный
+150,когда будет в наличии?,product_info,fallback,,разговорный
+151,тавар есть в наличае?,product_info,fallback,,опечатка
+152,харктеристики товара,product_info,fallback,,опечатка
+153,есть в другом цвите?,product_info,fallback,,опечатка
+154,когда паявится?,product_info,fallback,,опечатка
+155,расскажити про товар,product_info,fallback,,опечатка
+156,наличие,product_info,fallback,,короткий
+157,характеристики,product_info,fallback,,короткий
+158,цвета,product_info,fallback,,короткий
+159,размеры,product_info,fallback,,короткий
+160,товар,product_info,fallback,,пограничный
+161,Какой у вас график работы?,general_info,fallback,,нормальный
+162,Где находится ваш офис?,general_info,fallback,,нормальный
+163,Как с вами связаться?,general_info,fallback,,нормальный
+164,Есть ли у вас физический магазин?,general_info,fallback,,нормальный
+165,Расскажите о компании,general_info,fallback,,нормальный
+166,вы где находитесь?,general_info,fallback,,разговорный
+167,во сколько работаете?,general_info,fallback,,разговорный
+168,а телефон есть?,general_info,fallback,,разговорный
+169,магазин есть офлайн?,general_info,fallback,,разговорный
+170,как вам позвонить?,general_info,fallback,,разговорный
+171,где ваш офес?,general_info,fallback,,опечатка
+172,графек работы,general_info,fallback,,опечатка
+173,как свзаться?,general_info,fallback,,опечатка
+174,росскажите о кампании,general_info,fallback,,опечатка
+175,физичиский магазин есть?,general_info,fallback,,опечатка
+176,адрес,general_info,fallback,,короткий
+177,телефон,general_info,fallback,,короткий
+178,контакты,general_info,fallback,,короткий
+179,график,general_info,fallback,,короткий
+180,офис,general_info,fallback,,пограничный
+181,привет,other,fallback,,нормальный
+182,что ты умеешь?,other,fallback,,нормальный
+183,расскажи анекдот,other,fallback,,нормальный
+184,какая погода?,other,fallback,,нормальный
+185,ты робот?,other,fallback,,нормальный
+186,хай,other,fallback,,разговорный
+187,чё как?,other,fallback,,разговорный
+188,скучно,other,fallback,,разговорный
+189,лол,other,fallback,,разговорный
+190,ку,other,fallback,,разговорный
+191,превет,other,fallback,,опечатка
+192,что ты умееш,other,fallback,,опечатка
+193,раскажи анекдот,other,fallback,,опечатка
+194,ты работ?,other,fallback,,опечатка
+195,кагда погода?,other,fallback,,опечатка
+196,?,other,fallback,,короткий
+197,...,other,fallback,,короткий
+198,🤔,other,fallback,,эмодзи
+199,ааа,other,fallback,,шум
+200,тест,other,fallback,,пограничный

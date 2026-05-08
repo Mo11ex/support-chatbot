@@ -1,0 +1,52 @@
+{
+  "_name_or_path": "cointegrated/rubert-tiny2",
+  "architectures": [
+    "BertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "emb_size": 312,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 312,
+  "id2label": {
+    "0": "account",
+    "1": "delivery",
+    "2": "general_info",
+    "3": "order_status",
+    "4": "other",
+    "5": "payment_refund",
+    "6": "product_info",
+    "7": "promo_loyalty",
+    "8": "return_exchange",
+    "9": "technical_issue"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 600,
+  "label2id": {
+    "account": 0,
+    "delivery": 1,
+    "general_info": 2,
+    "order_status": 3,
+    "other": 4,
+    "payment_refund": 5,
+    "product_info": 6,
+    "promo_loyalty": 7,
+    "return_exchange": 8,
+    "technical_issue": 9
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 2048,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 3,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "problem_type": "single_label_classification",
+  "torch_dtype": "float32",
+  "transformers_version": "4.41.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 83828
+}

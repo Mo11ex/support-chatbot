@@ -1,0 +1,457 @@
+text,raw_label,label,source,is_synthetic
+Я бы хотел поговорить с чертовым кем-нибудь,other,other,bitext,False
+"Мобильное приложение не работает на моем Mac, можно ли сообщить об этой чертовой проблеме?",technical_issue,technical_issue,bitext,False
+"Мне нужно посмотреть наличие какого-то товара в сети, где я могу это сделать?",product_info,product_info,bitext,False
+Сколько времени на поезд...,delivery,delivery,runlu,False
+Когда Дейви Крокетт выжил и умер?,general_info,general_info,runlu,False
+куда я могу подать жалобу на ваш бренд?,other,other,bitext,False
+"помогите проверить, как скоро я получу свой продукт",delivery,delivery,ikshana,False
+Что это за родной город в театре Болшой?,general_info,general_info,runlu,False
+где проверить наличие чертового товара,product_info,product_info,bitext,False
+куда я могу отправить обратно этот чертов товар?,return_exchange,return_exchange,bitext,False
+"опыт с тобой был плохим, помогите мне подать жалобу",other,other,ikshana,False
+"Я хочу получить возмещение, вы мне поможете?",return_exchange,return_exchange,bitext,False
+"Wqanna совершать платежи, как мне это сделать?",payment_refund,payment_refund,bitext,False
+можешь помочь мне поговорить с ассистентом?,other,other,ikshana,False
+"Я хотел бы использовать ваше чертово приложение, как мне это сделать?",technical_issue,technical_issue,bitext,False
+"Хочу отправить идеи, куда это сделать?",other,other,bitext,False
+"У меня чертов отзыв, не могли бы вы помочь мне его отправить?",other,other,bitext,False
+"Я совершил покупку, но не получил счет. Помогите мне скачать ее.",payment_refund,payment_refund,bitext,False
+asxsistance получение вашего информационного бюллетеня,account,account,ikshana,False
+"мне нужно оставить чертов комментарий, где это сделать",other,other,bitext,False
+Я пытаюсь поговорить с ассистентом,other,other,ikshana,False
+"сайт не работает на моем компьютере, мне нужна помощь, чтобы сообщить об ошибке",technical_issue,technical_issue,bitext,False
+"Я не знаю, что мне нужно сделать, чтобы поговорить со службой поддержки клиентов.",general_info,general_info,ikshana,False
+"сайт не работает на моем телефоне, как сообщить о проблеме",technical_issue,technical_issue,bitext,False
+"как проверить, в какое время я могу связаться со службой поддержки клиентов?",general_info,general_info,ikshana,False
+"Мне нужно просмотреть счета от Джона, помогите мне.",payment_refund,payment_refund,ikshana,False
+"Я не могу заставить сайт работать на своем компьютере, как сообщить о проблеме?",technical_issue,technical_issue,bitext,False
+Есть ли в наличии рюкзак?,product_info,product_info,synthetic_dataset,True
+"Мне нужно проверить твои чертовы часы работы, как это сделать?",general_info,general_info,bitext,False
+Я хотел бы сообщить о проблеме с приобретенным мной продуктом. Могу ли я получить помощь?,product_info,product_info,bitext,False
+"Мне нужно создать учетную запись пользователя, мне нужна помощь",account,account,bitext,False
+отправлю в Дели,delivery,delivery,ikshana,False
+"что мне нужно сделать, чтобы получить компенсацию своих денег",payment_refund,payment_refund,ikshana,False
+"мне нужно открыть учетную запись, не могли бы мне помочь",account,account,bitext,False
+Мне нужна информация о чертовых зимних аслях.,promo_loyalty,promo_loyalty,bitext,False
+"Я хочу узнать больше о весенних распродажах, можете ли вы найти какую-нибудь информацию?",promo_loyalty,promo_loyalty,bitext,False
+"мне нужно удалить свой гребаный аккаунт, где это сделать",account,account,bitext,False
+"Я хотел бы найти магазины рядом со мной, как мне это сделать?",general_info,general_info,bitext,False
+"Мне нужно проверить, в какое время я могу обратиться в службу поддержки клиентов",general_info,general_info,ikshana,False
+"я не знаю, что делать, чтобы поговорить с агентом",other,other,ikshana,False
+"что мне нужно сделать, чтобы создать учетную запись Titanium для моего отца",account,account,ikshana,False
+"мне не нужен мой профиль, можно ли его отменить",account,account,bitext,False
+где я могу проверить текущий статус заказа DNK5ATL9?,order_status,order_status,ikshana,False
+"мне нужно подать чертову жалобу на твою компанию, как это сделать",other,other,bitext,False
+Что было самыми длинными зданиями в мире,general_info,general_info,runlu,False
+Название PDA: Как долго до xxxx airives на станции xxxxxxx,delivery,delivery,runlu,False
+"некоторые продукты в моей посылке указаны неверно, мне нужна помощь, чтобы сообщить о них",return_exchange,return_exchange,bitext,False
+Мне нужна помощь в сообщении о проблеме с оплатой,payment_refund,payment_refund,ikshana,False
+подача жалобы клиента на вашу компанию,other,other,ikshana,False
+"я ищу информацию о чертовых распродажах, мне нужна помощь",promo_loyalty,promo_loyalty,bitext,False
+"Мне нужно сообщить о раздавленном продукте, могу ли я получить помощь?",return_exchange,return_exchange,bitext,False
+"Я купил товар, но выбрал неправильный цвет, как я могу обновить свой чертов онлайн-заказ?",order_status,order_status,bitext,False
+Мне нужна информация о часах работы вашего магазина. Могу ли я получить помощь?,general_info,general_info,bitext,False
+"кто-то взломал мой профиль, помогите мне сбросить мой чертов пароль",account,account,bitext,False
+Ставка запасов Фейсбука,product_info,product_info,runlu,False
+изменить данные в стандартном аккаунте,account,account,ikshana,False
+"Я хочу предложить чертовы предложения по улучшению продукта, где я могу это сделать?",other,other,bitext,False
+Нужна помощь в подаче иска клиента против вашей организации,other,other,ikshana,False
+"я купил товар, но хочу вернуть его, мне нужна помощь",return_exchange,return_exchange,bitext,False
+"Я ищу информацию о чертовом статусе моего отказа, мне нужна помощь.",payment_refund,payment_refund,bitext,False
+Сколько стоит фунт в долл. США?,payment_refund,payment_refund,runlu,False
+"Я хочу отправить товар обратно, вы мне поможете?",return_exchange,return_exchange,bitext,False
+мне нужна помощь в сообщении о технической проблеме с мобильным приложением,technical_issue,technical_issue,bitext,False
+"Я не могу сделать перевод, как мне сообщить о проблеме с оплатой?",payment_refund,payment_refund,bitext,False
+Не могу добавить товар в заказ CS7Q7MW4,order_status,order_status,ikshana,False
+Я хотел бы узнать больше о следующих распродажах. Можете ли вы дать мне некоторую информацию?,promo_loyalty,promo_loyalty,bitext,False
+"мне нужно изменить покупку DUCKQERC, мне нужна помощь",order_status,order_status,ikshana,False
+Приложение вылетает,technical_issue,technical_issue,synthetic_dataset,True
+"приложение не работает на моем компьютере, мне нужно сообщить о проблеме",technical_issue,technical_issue,bitext,False
+"я купил чертов товар, но он мне не нужен, я хочу отменить заказ",order_status,order_status,bitext,False
+"PDA, в какой части страны есть тропические леса?",general_info,general_info,runlu,False
+"Я хочу узнать больше о распродажах, можете ли вы дать мне некоторую информацию?",promo_loyalty,promo_loyalty,bitext,False
+"Я хотел бы вернуть чертовы товары онлайн, могу ли я получить помощь?",return_exchange,return_exchange,bitext,False
+"Мне нужно узнать часы работы вашего магазина, помогите мне.",general_info,general_info,bitext,False
+Я хочу знать больше о следующих распродажах,promo_loyalty,promo_loyalty,bitext,False
+обновить покупку113542617735902,order_status,order_status,ikshana,False
+"как я могу увидеть, какие чертовы варианты доставки доступны?",delivery,delivery,ikshana,False
+"Пожалуйста, выясните цену акций Microsoft в Насдаке.",product_info,product_info,runlu,False
+"Я не знаю, что мне нужно сделать, чтобы заказать некоторые статьи.",order_status,order_status,ikshana,False
+"Я хотел бы вернуть товар, как это сделать?",return_exchange,return_exchange,bitext,False
+Когда приедет посылка?,order_status,order_status,synthetic_dataset,True
+"Мне нужно удалить чертов товар из корзины, мне нужна помощь",product_info,product_info,bitext,False
+"мне не нравится то, что я купил, ты поможешь мне это проверить?",return_exchange,return_exchange,bitext,False
+"мой продукт работает неправильно, мне нужна помощь, чтобы сообщить о проблеме с продуктом",product_info,product_info,bitext,False
+Мне нужна помощь в составлении рекламации клиента,other,other,ikshana,False
+"Я получил продукт не той модели, мне нужна помощь, чтобы сообщить об этом",return_exchange,return_exchange,bitext,False
+"сайт не работает на моем мобильном телефоне, как мне сообщить об этой чертовой проблеме?",technical_issue,technical_issue,bitext,False
+"приложение не работает на моем устройстве, помогите мне сообщить об ошибке",technical_issue,technical_issue,bitext,False
+Какова ставка за акции Уэллса Фарго?,product_info,product_info,runlu,False
+подача иска против вашего бизнеса,other,other,ikshana,False
+"Мне нужно совершить чертовы платежи, где это сделать?",payment_refund,payment_refund,bitext,False
+Искать чертовы магазины рядом со мной,general_info,general_info,bitext,False
+opdn Титановый аккаунт,account,account,ikshana,False
+Как оформить возврат?,return_exchange,return_exchange,synthetic_dataset,True
+"помогите мне понять, при каких обстоятельствах я могу запросить возврат средств",payment_refund,payment_refund,ikshana,False
+"Мне бы хотелось воспользоваться твоим чертовым мобильным приложением, ты мне поможешь?",technical_issue,technical_issue,bitext,False
+как я могу вернуть некоторые чертовы вещи в магазин?,return_exchange,return_exchange,bitext,False
+"Эхо, я получал письма от матери?",general_info,general_info,runlu,False
+"Я хотел бы выехать, как я могу это сделать?",payment_refund,payment_refund,bitext,False
+"Я хочу узнать о чертовом продукте, где мне найти дополнительную информацию?",product_info,product_info,bitext,False
+"что мне нужно сделать, чтобы проверить комиссию за досрочный выход?",order_status,order_status,ikshana,False
+"Я ищу информацию о чертовых распродажах, мне нужна помощь.",promo_loyalty,promo_loyalty,bitext,False
+"Я хочу воспользоваться твоим чертовым мобильным приложением, как мне это сделать?",technical_issue,technical_issue,bitext,False
+могу ли я добавить товар в корзину?,product_info,product_info,bitext,False
+"я должен сообщить о чертовых проблемах с приобретенным мной продуктом, как я могу это сделать",product_info,product_info,bitext,False
+Мне нужна помощь с добавлением чертового товара в корзину.,product_info,product_info,bitext,False
+Какова цена для Марвела?,product_info,product_info,runlu,False
+"нужна помощь, чтобы проверить расчетное время покупки NBLCE01I",order_status,order_status,ikshana,False
+"Я ищу информацию о сроках доставки моего заказа, как я могу ее получить?",delivery,delivery,bitext,False
+"Хотелось бы узнать подробнее о следующих распродажах, найдете ли вы какую-нибудь информацию?",promo_loyalty,promo_loyalty,bitext,False
+"что мне нужно сделать, чтобы использовать учетную запись Platinum",account,account,ikshana,False
+почему я не могу указать действительный дополнительный адрес доставки,delivery,delivery,ikshana,False
+"чертовы вещи, которые я получил, были чертовски повреждены, я хочу сообщить о них",return_exchange,return_exchange,bitext,False
+"мне нужно отправить чертовы предложения, мне нужна помощь",other,other,bitext,False
+Показать все поезда и время Ни,delivery,delivery,runlu,False
+"Я ищу информацию о будущих распродажах, где я могу ее найти?",promo_loyalty,promo_loyalty,bitext,False
+помогите подать жалобу потребителя на вашу компанию,other,other,ikshana,False
+"Я хотел бы проверить чертово время доставки, помогите мне.",delivery,delivery,bitext,False
+"хочу узнать больше о чертовых распродажах, можешь ли ты найти какую-нибудь информацию?",promo_loyalty,promo_loyalty,bitext,False
+Я хотел бы узнать о вашей чертовой политике возврата денег. Можете ли вы найти какую-нибудь информацию?,payment_refund,payment_refund,bitext,False
+x цена акций компании,product_info,product_info,runlu,False
+"Мне нужна информация о чертовом статусе моей замены, где я могу ее найти?",order_status,order_status,bitext,False
+"Мне нужна помощь, чтобы сообщить об ошибке при онлайн-платеже",payment_refund,payment_refund,ikshana,False
+"У меня проблема с моей чертовой учетной записью, помогите мне ее изменить.",account,account,bitext,False
+как я могу купить через ваше мобильное приложение?,technical_issue,technical_issue,bitext,False
+"Я указал неправильный товар, мне нужна помощь, чтобы сообщить об этом",return_exchange,return_exchange,bitext,False
+"чертовы продукты в моей доставке неверны, помогите мне сообщить о них",return_exchange,return_exchange,bitext,False
+"Мне нужно оставить комментарий к вашим услугам, как это сделать?",product_info,product_info,ikshana,False
+"Я хотел бы обменять некачественный товар в магазине, где я могу это сделать?",return_exchange,return_exchange,bitext,False
+Я хотел бы узнать больше о чертовых распродажах.,promo_loyalty,promo_loyalty,bitext,False
+"я купил товар, но выбрал неправильный размер, мне нужно изменить заказ",order_status,order_status,bitext,False
+У меня новый адрес электронной почты. Можешь отправить e-mail?,general_info,general_info,runlu,False
+"мне не нужно переходить на стандартную учетную запись, как мне это сделать",account,account,ikshana,False
+Доставляете ли в Краснодар?,delivery,delivery,synthetic_dataset,True
+"Я хочу купить 1R0YLJZH, вы можете мне помочь?",order_status,order_status,ikshana,False
+редактирование платинового аккаунта,account,account,ikshana,False
+как мне отправить электронное письмо в службу поддержки клиентов?,general_info,general_info,bitext,False
+"я получаю сообщение об ошибке в приложении на своем компьютере, как мне сообщить об этом",technical_issue,technical_issue,bitext,False
+"помогите мне проверить, какие способы доставки доступны",delivery,delivery,ikshana,False
+"Хотелось бы узнать о стоимости рассылки, где можно получить дополнительную информацию?",delivery,delivery,bitext,False
+"Мне нужно проверить наличие долбаной вещи в магазине, где это сделать?",product_info,product_info,bitext,False
+"я ищу информацию о чертовом статусе моего возмещения, как я могу его получить",payment_refund,payment_refund,bitext,False
+"Напиши Саре, если она сегодня свободна на завтрак.",general_info,general_info,runlu,False
+"где я могу проверить, какие способы оплаты вы принимаете?",payment_refund,payment_refund,ikshana,False
+"Мне нужна помощь, чтобы открыть счет Titanium для моего отца.",account,account,ikshana,False
+ты поможешь мне отправить обратно этот чертов заказ?,return_exchange,return_exchange,bitext,False
+Не приходит код подтверждения,account,account,synthetic_dataset,True
+"Я хотел бы узнать больше о чертовых продажах, можете ли вы дать мне некоторую информацию?",promo_loyalty,promo_loyalty,bitext,False
+"Мобильное приложение не работает на моем Mac, мне нужно сообщить о чертовой проблеме",technical_issue,technical_issue,bitext,False
+"Мне не нужен мой чертов аккаунт, помогите мне его удалить.",account,account,bitext,False
+"Мне нравится информация о часах работы твоего чертового магазина, как мне ее найти?",general_info,general_info,bitext,False
+"мобильное приложение не работает на моем телефоне, я хочу сообщить о проблеме",technical_issue,technical_issue,bitext,False
+"мне нужна информация о чертовом товаре в магазине, где я могу его найти",return_exchange,return_exchange,bitext,False
+"Я хотел бы совершить гребаные платежи, могу ли я получить помощь?",payment_refund,payment_refund,bitext,False
+"нужна помощь, чтобы поговорить с живым агентом",other,other,ikshana,False
+Мне не приходили письма за последние 5 часов?,general_info,general_info,runlu,False
+Во сколько поезд отправляется из Праги в Брно?,delivery,delivery,runlu,False
+Можете ли вы помочь мне отписаться от новостной рассылки?,account,account,ikshana,False
+"мне нужна информация о чертовых распродажах, где я могу ее найти",promo_loyalty,promo_loyalty,bitext,False
+"Я хотел бы вернуть товар онлайн, как я могу это сделать?",return_exchange,return_exchange,bitext,False
+"Мне нужно найти ближайший ко мне магазин, где я могу это сделать?",general_info,general_info,bitext,False
+"я не зарегистрирован, мне нужно открыть у вас стандартный счет",account,account,ikshana,False
+"я не знаю, что делать, чтобы попросить вернуть деньги",payment_refund,payment_refund,ikshana,False
+"мне нужна помощь, чтобы узнать наличие товара",product_info,product_info,bitext,False
+"мне нужна помощь в обновлении моего заказа, прежде чем вы его отправите",order_status,order_status,bitext,False
+"Я не знаю, как мне указать адрес доставки.",delivery,delivery,ikshana,False
+заказанный мной продукт не работает должным образом. Можете ли вы мне помочь сообщить о проблеме с продуктом?,product_info,product_info,bitext,False
+"я не знаю, как перейти на платиновый аккаунт",account,account,ikshana,False
+Можете ли вы помочь мне подать иск против вашей компании?,other,other,ikshana,False
+"Я хотел бы проверить чертову стоимость пересылки, мне поможет",delivery,delivery,bitext,False
+"Я хотел бы предложить идеи по улучшению продукта, где мне это сделать?",other,other,bitext,False
+хочу сообщить об ошибках в приобретенном мной продукте,product_info,product_info,bitext,False
+см. законопроект № 12588,payment_refund,payment_refund,ikshana,False
+"Пожалуйста, отправьте письмо моей маме.",general_info,general_info,runlu,False
+"Мне нужно с кем-нибудь поговорить, как мне это сделать?",other,other,bitext,False
+"Я хотел бы добавить чертов товар в корзину, могу ли я получить помощь?",product_info,product_info,bitext,False
+"Мне нужно воспользоваться твоим чертовым мобильным приложением, где мне это сделать?",technical_issue,technical_issue,bitext,False
+Мне нужна помощь в поиске моей гребаной посылки,order_status,order_status,bitext,False
+"Ищу информацию о чертовых весенних распродажах, помогите.",promo_loyalty,promo_loyalty,bitext,False
+"Я хотел бы проверить наличие товаров онлайн, как это сделать?",product_info,product_info,bitext,False
+мне нужно ввести другой адрес доставки,delivery,delivery,ikshana,False
+Я хочу увидеть вашу гарантию возврата денег. Как я могу это сделать?,payment_refund,payment_refund,ikshana,False
+"мне нужна информация о чертовых магазинах поблизости, где я могу ее получить",general_info,general_info,bitext,False
+"У меня есть комментарий о вашей компании, помогите мне его отправить.",other,other,bitext,False
+"Я ищу информацию о продажах, могу ли я получить помощь?",promo_loyalty,promo_loyalty,bitext,False
+"Я хотел бы узнать больше о распродажах, вы найдете какую-нибудь информацию?",promo_loyalty,promo_loyalty,bitext,False
+мне нужна помощь в отмене премиум-аккаунта,account,account,ikshana,False
+"Мне нужна информация о стоимости доставки, как я могу ее получить?",delivery,delivery,bitext,False
+мне нужно найти заказ BQQFYSQJ,order_status,order_status,ikshana,False
+Мне нужно сообщить о проблеме с заказанным товаром. Где я могу это сделать?,product_info,product_info,bitext,False
+"Мне нужна помощь, чтобы найти ближайший магазин",general_info,general_info,bitext,False
+"Я не знаю, как отправить отзыв о ваших услугах.",product_info,product_info,ikshana,False
+Жду скидку 10 долларов,payment_refund,payment_refund,ikshana,False
+"Мне нужно обновить свои чертовы личные данные, помогите мне.",account,account,bitext,False
+"я не получил посылку, мне нужна помощь, чтобы сообщить о проблеме с доставкой",delivery,delivery,bitext,False
+"Пожалуйста, дайте мне подробности: 1 долл. США = Rs",payment_refund,payment_refund,runlu,False
+"Я хочу посмотреть, сколько времени потребуется, чтобы прибыть росистая доставка.",delivery,delivery,ikshana,False
+"Мне нужна информация о распродажах, как я могу ее получить?",promo_loyalty,promo_loyalty,bitext,False
+Можете ли вы помочь мне найти ближайший ко мне магазин?,general_info,general_info,bitext,False
+как я могу увидеть историю заказов?,account,account,bitext,False
+"Я хочу отменить товар, как мне это сделать?",order_status,order_status,bitext,False
+Я пытаюсь увидеть статус заказа IUPCKU97.,order_status,order_status,ikshana,False
+"Мне нужно удалить товар из корзины, могу ли я получить помощь?",product_info,product_info,bitext,False
+Я хотел бы исправить свои личные данные. Вы мне поможете?,account,account,bitext,False
+"Я хочу узнать больше о продукте, дайте мне некоторую информацию",product_info,product_info,bitext,False
+проблема со сбросом ключа доступа,account,account,ikshana,False
+как отменить покупку SYWFCSJD?,order_status,order_status,ikshana,False
+Я не могу перейти на стандартную учетную запись,account,account,ikshana,False
+"нужно отправить чертовски предложение по улучшению продукта, помогите мне",other,other,bitext,False
+Сколько времени на поезд?,delivery,delivery,runlu,False
+"где я могу проверить, в какие часы я могу связаться со службой поддержки клиентов?",general_info,general_info,ikshana,False
+я не могу заставить приложение работать на моем компьютере сообщить о чертовой проблеме,technical_issue,technical_issue,bitext,False
+Каковы текущие запасы для Яху?,product_info,product_info,runlu,False
+как я могу связаться со службой поддержки клиентов?,general_info,general_info,ikshana,False
+почта x@x.org,general_info,general_info,runlu,False
+"Мне нужна информация о вашей политике возврата средств, где я могу ее получить",payment_refund,payment_refund,bitext,False
+Я жду возмещения в размере 10 долларов.,payment_refund,payment_refund,ikshana,False
+У меня возникла проблема с настройкой нового адреса доставки.,delivery,delivery,ikshana,False
+"Я хотел бы проверить часы работы твоего чертового магазина, могу ли я получить некоторую помощь?",general_info,general_info,bitext,False
+"Я хочу отследить свой чертов возврат средств, как мне это сделать?",payment_refund,payment_refund,bitext,False
+можно ли создать учетную запись пользователя,account,account,bitext,False
+"Я бы хотел поговорить с кем-нибудь, черт возьми, мне нужна помощь",other,other,bitext,False
+"нужна помощь, чтобы увидеть заказ KND8PTMN syatus",order_status,order_status,ikshana,False
+"Я хочу узнать больше о весенних распродажах, можете ли вы дать мне некоторую информацию?",promo_loyalty,promo_loyalty,bitext,False
+Могу ли я разместить заказ из Индии?,delivery,delivery,ikshana,False
+как скоро я могу ожидать доставку?,delivery,delivery,ikshana,False
+можно ли купить через ваше приложение?,technical_issue,technical_issue,bitext,False
+"Я купил чертов товар, но выбрал не ту модель. Мне нужно обновить онлайн-заказ.",order_status,order_status,bitext,False
+"сайт не работает на моем Mac, можете ли вы помочь мне сообщить об этой чертовой проблеме?",technical_issue,technical_issue,bitext,False
+"Мне нужна информация о следующих распродажах, как я могу ее получить?",promo_loyalty,promo_loyalty,bitext,False
+как я могу получить возмещение,payment_refund,payment_refund,ikshana,False
+"Я ищу информацию о выставке, могу ли я ее получить?",promo_loyalty,promo_loyalty,bitext,False
+можешь помочь мне сбросить мой чертов пароль?,account,account,bitext,False
+"Я хочу обменять эти чертовы заказы, которые я купил, где мне это сделать?",return_exchange,return_exchange,bitext,False
+могу ли я перейти на платиновый аккаунт,account,account,ikshana,False
+Я хочу информацию о продажах,promo_loyalty,promo_loyalty,bitext,False
+"Мне нужна помощь в обмене товара, который я купил онлайн в магазине.",return_exchange,return_exchange,bitext,False
+Заказ 296884 уже отправили?,order_status,order_status,synthetic_dataset,True
+вопрос об отмене покупки A8YLXAXU,order_status,order_status,ikshana,False
+"мне нужно удалить чертов предмет из аккаунта, где мне это сделать",product_info,product_info,bitext,False
+Мне хотелось бы узнать о ваших часах работы. Как мне найти дополнительную информацию?,general_info,general_info,bitext,False
+Как долго мы доберемся до центра.,delivery,delivery,runlu,False
+"Я хотел бы найти магазины поблизости, мне нужна помощь",general_info,general_info,bitext,False
+"сайт не работает на моем планшете, я хочу сообщить о проблеме",technical_issue,technical_issue,bitext,False
+Я не могу оплатить заказ 1CMFS82G,order_status,order_status,ikshana,False
+"Я не могу заставить приложение работать на моем мобильном телефоне, мне нужно сообщить о проблеме",technical_issue,technical_issue,bitext,False
+"Я бы хотел воспользоваться твоим чертовым мобильным приложением, могу ли я получить помощь?",technical_issue,technical_issue,bitext,False
+"хочу сообщить о чертовых проблемах с полученным мной продуктом, мне поможет",product_info,product_info,bitext,False
+"Я не могу заставить приложение работать на своем планшете, как мне сообщить об ошибке?",technical_issue,technical_issue,bitext,False
+можно ли увидеть чертов статус моего замененного товара?,order_status,order_status,bitext,False
+я пытаюсь отредактировать покупку 7VYZ8KUP,order_status,order_status,ikshana,False
+Нужна помощь в проверке разрешенных способов оплаты,payment_refund,payment_refund,ikshana,False
+где заказать несколько статей?,order_status,order_status,ikshana,False
+Покажите мне записи Сачин Тендулкара?,general_info,general_info,runlu,False
+"мне нужно отправить отзыв о продукте, помогите мне",other,other,bitext,False
+"Мне нужно получить возмещение, мне нужна помощь",return_exchange,return_exchange,bitext,False
+"Я не использую свою Премиум-учетную запись, мне нужна помощь, чтобы закрыть ее",account,account,ikshana,False
+"сайт не работает на моем телефоне, я хочу сообщить о чертовой проблеме",technical_issue,technical_issue,bitext,False
+Мне нужна помощь в переходе на платиновый аккаунт,account,account,ikshana,False
+"Я бы хотел использовать твое чертово мобильное приложение, как мне это сделать?",technical_issue,technical_issue,bitext,False
+"Я хочу проверить стоимость рассылки, могу ли я это сделать?",delivery,delivery,bitext,False
+помогите мне купить несколько продуктов,order_status,order_status,ikshana,False
+"Я хочу сообщить о чертовой технической проблеме, где я могу это сделать?",technical_issue,technical_issue,bitext,False
+Я пытаюсь найти информацию о часах работы твоего чертового магазина.,general_info,general_info,bitext,False
+помогите мне оставить отзыв о вашей продукции,product_info,product_info,ikshana,False
+Я бы хотел вернуть чертовы товары онлайн,return_exchange,return_exchange,bitext,False
+"мой аккаунт взломали, не могли бы вы помочь мне сбросить мой чертов пароль?",account,account,bitext,False
+"Я пытаюсь узнать, в какие часы я могу связаться со службой поддержки клиентов",general_info,general_info,ikshana,False
+"Мне нужно вернуть деньги, как мне это сделать?",return_exchange,return_exchange,bitext,False
+"Мне нужна информация о чертовых распродажах, как я могу ее получить?",promo_loyalty,promo_loyalty,bitext,False
+"Я не могу вспомнить PIN-код своего профиля, как его сбросить?",account,account,ikshana,False
+"Я хотел бы подтвердить наличие продуктов онлайн, мне нужна помощь",product_info,product_info,bitext,False
+Каково определение этого объекта?,general_info,general_info,runlu,False
+"Я не знаю, как изменить предмет покупки 2V5QZNX0",order_status,order_status,ikshana,False
+"Мне нужно найти чертов магазин, как мне это сделать?",general_info,general_info,bitext,False
+как я могу поговорить с оператором,other,other,ikshana,False
+"Помогите узнать, в каких случаях я могу потребовать вернуть свои деньги",payment_refund,payment_refund,ikshana,False
+"Мне нужно представить идеи, вы мне поможете?",other,other,bitext,False
+Мне нужна информация о продажах,promo_loyalty,promo_loyalty,bitext,False
+"Мне нравится информация о чертовых зимних распродажах, где я могу ее получить",promo_loyalty,promo_loyalty,bitext,False
+"у меня есть комментарий о продукте, как я могу его отправить",other,other,bitext,False
+"моя карта не работает, мне нужно сообщить о чертовой проблеме с оплатой",payment_refund,payment_refund,bitext,False
+"сайт не работает на моем планшете, помогите, сообщите об ошибке",technical_issue,technical_issue,bitext,False
+"Я хотел бы увидеть наличие этого чертового предмета, не могли бы вы мне помочь?",product_info,product_info,bitext,False
+"Я бы хотел воспользоваться твоим чертовым мобильным приложением, ты мне поможешь?",technical_issue,technical_issue,bitext,False
+"у тебя есть номер телефона, чтобы связаться с чертовой службой поддержки клиентов?",general_info,general_info,ikshana,False
+"Я хотел бы использовать ваше мобильное приложение, мне нужна помощь",technical_issue,technical_issue,bitext,False
+"моя доставка не завершена, мне нужна помощь, чтобы сообщить об отсутствующем товаре",delivery,delivery,bitext,False
+"мне нужно предложить чертову идею, как сделать продукт лучше, не мог бы ты мне помочь",other,other,bitext,False
+"Мне нужна информация о чертовых зимних распродажах, как я могу ее получить?",promo_loyalty,promo_loyalty,bitext,False
+"Я хочу узнать стоимость доставки, где мне это сделать?",delivery,delivery,bitext,False
+"мне нужно проверить, где моя гребаная посылка, ты можешь мне помочь?",order_status,order_status,bitext,False
+Мне нужна помощь,other,other,synthetic_dataset,True
+Могу ли я проверить наличие чертовых товаров онлайн?,product_info,product_info,bitext,False
+"Я не знаю, что делать, чтобы поговорить с кем-то",other,other,ikshana,False
+"Мне нужно найти то, что я купил, мне нужна помощь в проверке моей гребаной истории покупок.",account,account,bitext,False
+"Я хотел бы узнать больше о чертовых распродажах, можете ли вы дать мне некоторую информацию?",promo_loyalty,promo_loyalty,bitext,False
+"мобильное приложение не работает на моем Mac, как мне сообщить о проблеме",technical_issue,technical_issue,bitext,False
+"Я хотел бы поговорить с чертовой службой поддержки клиентов, где мне это сделать?",general_info,general_info,bitext,False
+"Я сделал чертов заказ и не получил счет, мне нужна помощь с его получением",payment_refund,payment_refund,bitext,False
+"Я хотел бы узнать о сроках доставки моей покупки, где я могу получить дополнительную информацию?",delivery,delivery,bitext,False
+"Я не могу совершать переводы, сообщаю о проблемах с оплатой",payment_refund,payment_refund,bitext,False
+"Я купил товар, но выбрал неправильный размер. Я хочу обновить свой онлайн-заказ.",order_status,order_status,bitext,False
+"нужна помощь, чтобы узнать, когда прибудет мой заказ",delivery,delivery,ikshana,False
+"Я хочу поговорить с человеком, как мне это сделать?",other,other,ikshana,False
+Вы дадите мне информацию о следующих продажах?,promo_loyalty,promo_loyalty,bitext,False
+"один из чертовых товаров, которые я получил, неправильный, помогите мне сообщить об этом",return_exchange,return_exchange,bitext,False
+"Мне нужна информация о весенних распродажах, где я могу ее получить?",promo_loyalty,promo_loyalty,bitext,False
+куда отправить чертов заказ обратно?,return_exchange,return_exchange,bitext,False
+"я купил офигенный товар, но он мне не нужен, мне нужно отменить заказ",order_status,order_status,bitext,False
+"я бы хотел поговорить с кем-нибудь, где я мог бы это сделать",other,other,bitext,False
+Доставка в выходные работает?,delivery,delivery,synthetic_dataset,True
+"Мне нужна информация о зимних распродажах, как ее найти?",promo_loyalty,promo_loyalty,bitext,False
+помощь в заказе статьи,order_status,order_status,ikshana,False
+Каков рост стоимости акций за последнюю неделю Дисней?,product_info,product_info,runlu,False
+Какие сроки возврата?,return_exchange,return_exchange,synthetic_dataset,True
+отменить покупку00123842,order_status,order_status,ikshana,False
+"хочу открыть чертов аккаунт, как это сделать",account,account,bitext,False
+"мне нужен чертов аккаунт, ты поможешь мне его открыть?",account,account,bitext,False
+"Я ищу информацию о зимних распродажах, где я могу ее получить?",promo_loyalty,promo_loyalty,bitext,False
+"Когда следующий поезд, путешествующий по городу, уезжает отсюда?",delivery,delivery,runlu,False
+помогите мне проверить чертову историю покупок,account,account,bitext,False
+мобильное приложение не работает на моем Mac. Можете ли вы помочь мне сообщить о проблеме?,technical_issue,technical_issue,bitext,False
+"Я хотел бы узнать больше о твоих чертовых часах работы, можешь ли ты найти какую-нибудь информацию?",general_info,general_info,bitext,False
+"мне нужно поговорить с чертовым человеком, где я могу это сделать",other,other,bitext,False
+Непонятно что делать,other,other,synthetic_dataset,True
+изменение бесплатного аккаунта,account,account,ikshana,False
+Сколько [валюта_источник: доллары] в фунте?,payment_refund,payment_refund,runlu,False
+"Я ищу информацию о весенних распродажах, где я могу ее получить?",promo_loyalty,promo_loyalty,bitext,False
+"Мне нужно обменять купленные мной чертовы заказы, как это сделать?",return_exchange,return_exchange,bitext,False
+Отследить заказ 144451,order_status,order_status,synthetic_dataset,True
+"Мне нужно найти ближайший ко мне магазин, как это сделать?",general_info,general_info,bitext,False
+"я не могу заставить сайт работать на моем Mac, помогите мне сообщить о проблеме",technical_issue,technical_issue,bitext,False
+установить новый адрес доставки,delivery,delivery,ikshana,False
+когда будут распродажи,promo_loyalty,promo_loyalty,bitext,False
+Сколько стоит чехол для iPhone?,product_info,product_info,synthetic_dataset,True
+"Я хочу узнать больше о чертовых зимних распродажах, найти информацию",promo_loyalty,promo_loyalty,bitext,False
+"Что ""Apple"" закрыла вчера?",product_info,product_info,runlu,False
+Мне нужна помощь для обмена купленных мной товаров,return_exchange,return_exchange,bitext,False
+"Каков обменный курс между 500 долларов, что я фрак?",payment_refund,payment_refund,runlu,False
+"Я не знаю, что делать, чтобы увидеть плату за отмену бронирования.",order_status,order_status,ikshana,False
+"мне нужно обменять чертову вещь, которую я купил в магазине, где мне это сделать",return_exchange,return_exchange,bitext,False
+Хочу вернуть товар,return_exchange,return_exchange,synthetic_dataset,True
+не могли бы вы помочь мне увидеть чертову дату доставки?,delivery,delivery,bitext,False
+я стараюсь оставлять свой отзыв,product_info,product_info,ikshana,False
+"Я ищу информацию о чертовых продуктах, могу ли я получить помощь?",product_info,product_info,bitext,False
+"Я купил товар, но выбрал неправильный цвет, можно ли изменить мой чертов онлайн-заказ?",order_status,order_status,bitext,False
+Сколько иен за каждый доллар,payment_refund,payment_refund,runlu,False
+"мне нужна помощь, чтобы просмотреть историю покупок",account,account,bitext,False
+Я ищу информацию о чертовых весенних распродажах. Можете мне помочь?,promo_loyalty,promo_loyalty,bitext,False
+"Мне нужно изменить свою учетную запись пользователя, где я могу это сделать?",account,account,bitext,False
+"Я потерял чертов счет от Джона, пришли мне его.",payment_refund,payment_refund,ikshana,False
+"я купил чертов товар, но он мне не нужен, как мне отменить этот чертов заказ",order_status,order_status,bitext,False
+Есть ли скидки?,promo_loyalty,promo_loyalty,synthetic_dataset,True
+мне нужно отследить возврат средств,payment_refund,payment_refund,ikshana,False
+Обменный курс от КАД к доллару США,payment_refund,payment_refund,runlu,False
+"у меня чертовски жалоба на твой бренд, могу ли я ее отправить?",other,other,bitext,False
+где проверить какие способы доставки доступны?,delivery,delivery,ikshana,False
+"Я хотел бы использовать ваше приложение, могу ли я получить помощь",technical_issue,technical_issue,bitext,False
+"Я хочу решить проблемы с оплатой, могу ли я получить помощь?",payment_refund,payment_refund,bitext,False
+"Я хочу проверить вашу политику возврата, помогите мне.",payment_refund,payment_refund,ikshana,False
+"у меня есть отзыв о продукте, помогите, мистер, отправьте его",other,other,bitext,False
+"Мне нужно увидеть дату доставки, вы мне поможете?",delivery,delivery,bitext,False
+"Мне нужна помощь, чтобы подать иск",other,other,ikshana,False
+помощь в заказе нескольких ваших товаров,order_status,order_status,ikshana,False
+"сайт не работает, сообщите о проблеме",technical_issue,technical_issue,bitext,False
+не могли бы вы помочь мне добавить товар в корзину?,product_info,product_info,bitext,False
+"Я хотел бы помочь со службой поддержки клиентов, которая могла бы мне помочь",general_info,general_info,ikshana,False
+Мне нужно просмотреть наличие товаров в Интернете. Вы мне поможете?,product_info,product_info,bitext,False
+можешь помочь мне использовать платиновый профиль,account,account,ikshana,False
+"моя посылка не укомплектована, как я могу сообщить об отсутствующем товаре?",delivery,delivery,bitext,False
+Какой статус заказа 926891?,order_status,order_status,synthetic_dataset,True
+"хочу узнать, в какое время я смогу связаться со службой поддержки",general_info,general_info,ikshana,False
+"Мне нужна информация о стоимости доставки, как ее найти?",delivery,delivery,bitext,False
+"Я не знаю, как мне создать учетную запись Titanium.",account,account,ikshana,False
+где я могу изменить адрес доставки?,delivery,delivery,ikshana,False
+мне нужно приобрести продукт,order_status,order_status,ikshana,False
+Я не получил подтверждение платежа. Помогите мне сообщить о чертовой проблеме с оплатой.,payment_refund,payment_refund,bitext,False
+"Я хотел бы заполнить свои личные данные, как мне это сделать?",account,account,bitext,False
+где я могу купить несколько продуктов?,order_status,order_status,ikshana,False
+"Я не могу заставить приложение работать на своем компьютере, мне нужно сообщить об ошибке",technical_issue,technical_issue,bitext,False
+"Мне бы хотелось увидеть, что ваша политика возврата поможет мне",return_exchange,return_exchange,bitext,False
+"Я ищу информацию о чертовых весенних распродажах, могу ли я получить помощь?",promo_loyalty,promo_loyalty,bitext,False
+не могли бы вы дать мне информацию о распродажах?,promo_loyalty,promo_loyalty,bitext,False
+даст мне информацию о следующих продажах,promo_loyalty,promo_loyalty,bitext,False
+"Этот чертов товар, который я получил, неправильный, можете ли вы помочь мне сообщить об этом?",return_exchange,return_exchange,bitext,False
+"чертов продукт, который я получил, неправильный, не могли бы вы помочь мне сообщить об этом?",return_exchange,return_exchange,bitext,False
+"Я бы хотел использовать твое чертово мобильное приложение, оно мне поможет",technical_issue,technical_issue,bitext,False
+"как я могу увидеть, сколько времени занимает доставка?",delivery,delivery,ikshana,False
+Сколько стоит наушники Sony?,product_info,product_info,synthetic_dataset,True
+"Я ищу информацию о чертовых зимних распродажах, могу ли я получить помощь?",promo_loyalty,promo_loyalty,bitext,False
+"сайт не работает, я хотел бы сообщить о проблеме",technical_issue,technical_issue,bitext,False
+"мне бы хотелось поискать в чертовом магазине, как я мог это сделать",general_info,general_info,bitext,False
+"мне нужно вернуть товар онлайн, как это сделать",return_exchange,return_exchange,bitext,False
+"Я купил чертов товар, но выбрал неправильный размер, хочу изменить свой заказ.",order_status,order_status,bitext,False
+Я забыл включить товар в покупку 7WGEKZA5,order_status,order_status,ikshana,False
+Есть что-нибудь по электронной почте за последний час?,general_info,general_info,runlu,False
+поддерживает попытку редактирования адреса,delivery,delivery,ikshana,False
+как я могу использовать ваше приложение,technical_issue,technical_issue,bitext,False
+могу ли я переключить что-нибудь порядка DPDGR17C?,order_status,order_status,ikshana,False
+"мне нужно отправить чертов отзыв о твоем бренде, где я могу это сделать",other,other,bitext,False
+помогите мне проверить статус возврата,payment_refund,payment_refund,ikshana,False
+"Мне нужно проверить наличие товаров в магазине, могу ли я получить помощь?",product_info,product_info,bitext,False
+"приложение не работает на моем мобильном телефоне, помогите мне сообщить об ошибке",technical_issue,technical_issue,bitext,False
+"Мне нужно чертово возмещение, могу ли я его запросить?",return_exchange,return_exchange,bitext,False
+"Я хотел бы запросить возврат средств, могу ли я получить некоторую помощь?",return_exchange,return_exchange,bitext,False
+"что мне нужно сделать, чтобы связаться с человеком?",other,other,ikshana,False
+"Я ищу информацию о продуктах, где я могу ее найти?",product_info,product_info,bitext,False
+"хочу проверить, где моя доставка, как это сделать",order_status,order_status,bitext,False
+Я хочу увидеть наличие товара,product_info,product_info,bitext,False
+"Я хотел бы использовать ваше приложение, как я могу это сделать?",technical_issue,technical_issue,bitext,False
+"Товар, который я получил, неправильный, мне нужна помощь, чтобы сообщить об этом",return_exchange,return_exchange,bitext,False
+"Мне нужно вернуть в магазин чертов товар, который я купил в Интернете. Вы мне поможете?",return_exchange,return_exchange,bitext,False
+Сколько ждать заказ?,order_status,order_status,synthetic_dataset,True
+"мне нужна чертова учетная запись пользователя, можешь помочь мне ее создать?",account,account,bitext,False
+"мое впечатление от вас было ужасным, подайте жалобу",other,other,ikshana,False
+Есть ли самовывоз?,delivery,delivery,synthetic_dataset,True
+"мне нужна информация о следующих распродажах, могу ли я ее получить",promo_loyalty,promo_loyalty,bitext,False
+Вы лучший магазин!,other,other,synthetic_dataset,True
+могу ли я вернуть некоторые чертовы вещи в магазине,return_exchange,return_exchange,bitext,False
+могу ли я написать отзыв о вашей продукции,product_info,product_info,ikshana,False
+"Я не знаю, как отменить покупку JMFUYL0O",order_status,order_status,ikshana,False
+"Я хотел бы поговорить с чертовым агентом-человеком, могу ли я получить помощь?",other,other,bitext,False
+"мне нужна помощь, чтобы поговорить с кем-то",other,other,ikshana,False
+"помогите мне узнать, в какое время я могу обратиться в службу поддержки клиентов",general_info,general_info,ikshana,False
+"т. е. если вы хотите сообщить о неправильном продукте, это может мне помочь.",return_exchange,return_exchange,bitext,False
+:: проверка валют,payment_refund,payment_refund,runlu,False
+хочу узнать об отмене подписки на новостную рассылку моей компании,account,account,ikshana,False
+"Я хочу увидеть наличие товара, мне нужна помощь",product_info,product_info,bitext,False
+"мой заказ был утерян, как мне сообщить о проблемах с доставкой?",delivery,delivery,bitext,False
+"как узнать, в какие часы я могу связаться со службой поддержки клиентов",general_info,general_info,ikshana,False
+как сообщить о проблемах с регистрацией,account,account,ikshana,False
+"Я не могу открыть счет, мне нужно сообщить о проблеме с регистрацией",account,account,ikshana,False
+Где ближайший пункт выдачи?,delivery,delivery,synthetic_dataset,True
+"Я хотел бы сделать переводы, помогите мне",payment_refund,payment_refund,bitext,False
+"Мне нужно уведомить о долбаных проблемах с оплатой, где это сделать?",payment_refund,payment_refund,bitext,False
+"Мне нужно отменить товар, как мне это сделать?",order_status,order_status,bitext,False
+Я хотел бы узнать больше о продажах найти некоторую информацию,promo_loyalty,promo_loyalty,bitext,False
+"приложение не работает на моем компьютере, мне нужна помощь, чтобы сообщить о проблеме",technical_issue,technical_issue,bitext,False
+Сколько времени на поезд из Нью-Йорка в Покипси?,delivery,delivery,runlu,False
+как мне сделать перевод?,payment_refund,payment_refund,bitext,False
+как я могу проверить наличие чертовых товаров онлайн?,product_info,product_info,bitext,False
+"Я хочу узнать больше о следующих распродажах, можешь ли ты дать мне какую-нибудь информацию?",promo_loyalty,promo_loyalty,bitext,False
+"нужно проверить чертову стоимость доставки, где это сделать",delivery,delivery,bitext,False
+Каков обменный курс между США и Мексикой?,payment_refund,payment_refund,runlu,False
+"Мне нужно обменять чертов товар, который я купил в магазине, ты мне поможешь?",return_exchange,return_exchange,bitext,False
+"хочу оставить отзыв о вашем бренде, могу ли я получить помощь",other,other,bitext,False
+"Я ищу информацию о чертовом товаре в магазине, помогите мне.",return_exchange,return_exchange,bitext,False
+как мне вернуть некоторые товары в магазин?,return_exchange,return_exchange,bitext,False
+"приложение не работает на моем устройстве, помогите мне сообщить о проблеме",technical_issue,technical_issue,bitext,False
+"приложение не работает, сообщите о проблеме",technical_issue,technical_issue,bitext,False
+"Я хочу обменять товар в магазине, вы мне поможете?",return_exchange,return_exchange,bitext,False
+"Мне нужно поговорить с человеком, ты можешь мне помочь?",other,other,bitext,False
+"гребаный продукт, который я получил, был раздавлен, мог бы сообщить об этом",return_exchange,return_exchange,bitext,False
+"Я заказал чертову вещь и не получил счет, можешь ли ты мне помочь с ее получением?",payment_refund,payment_refund,bitext,False
+Я хочу обновить свой адрес,delivery,delivery,ikshana,False
